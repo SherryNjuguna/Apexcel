@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Contact from '../views/Contact.vue'
 import About from '../views/About.vue'
 import Programs from '../views/Programs.vue'
+import Tech from '../views/Tech.vue'
+import Entrepreneurship from '../views/Entrepreneurship.vue'
 
 
 const routes = [
@@ -22,7 +24,14 @@ const routes = [
             path: '/programs',
             component:Programs,
             }, 
-           
+            {
+              path: '/tech',
+              component:Tech,
+              }, 
+              {
+                path: '/entrepreneurship',
+                component:Entrepreneurship,
+                }, 
 
 
   // Add more routes here as needed

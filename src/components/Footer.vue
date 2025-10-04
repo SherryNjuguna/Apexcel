@@ -11,7 +11,7 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
 
 </script>
 <template>
-  <footer class="ftco-footer ftco-no-pb ftco-section" style="background-color: rgb(10 63 105); color: white; padding: 20px 0;">
+  <footer class="ftco-footer ftco-no-pb ftco-section" style="background-color: rgb(12, 65, 107); color: white; padding: 20px 0;">
     <div class="container-fluid" style="width: 100%;"> <!-- Using container-fluid for full-width layout -->
     <div class="row justify-content-center text-center mb-5"> <!-- Added justify-content-center and text-center -->
         <div class="col-md-6 col-lg-3">
@@ -22,15 +22,15 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
                 </div>
                 <ul class="footer-list">
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         <router-link to="/about" class="text-white text-decoration-none">About Us</router-link>
                     </li>
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         <router-link to="/programs" class="text-white text-decoration-none">Programs</router-link>
                     </li>
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         <router-link to="/contact" class="text-white text-decoration-none">Contact Us</router-link>
                     </li>
                    
@@ -45,15 +45,15 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
                 </div>
                 <ul class="footer-list">
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         Leadership Development
                     </li>
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         Tech Training programs
                     </li>
                     <li>
-                        <i class="fas fa-check" style="color: black; margin-right: 5px;"></i>
+                        <i class="fas fa-check" style="color: white; margin-right: 5px;"></i>
                         Entrepreneurship Programs 
                     </li>
                     
@@ -68,10 +68,10 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
     </div>
     <ul class="footer-list">
         <li>
-            <i class="fas fa-envelope" style="color: black;"></i> apexcelventures@gmail.com
+            <i class="fas fa-envelope" style="color: white;"></i> apexcelventures@gmail.com
         </li>
         <li>
-            <i class="fas fa-phone" style="color: black;"></i> +254 94 967 580
+            <i class="fas fa-phone" style="color: white;"></i> +254 94 967 580
         </li>
         <li class="">
             <i class="fab fa-facebook " style="color: white;"></i>

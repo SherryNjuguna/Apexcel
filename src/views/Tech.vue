@@ -22,18 +22,18 @@ const navigateToProgram = (program) => {
       <div class="hero-overlay"></div>
       
       <div class="hero-background desktop-bg">
-        <img :src="desktopImage" alt="Leadership Development Program" class="background-image">
+        <img :src="desktopImage" alt="Tech Training Program" class="background-image">
       </div>
       
       <div class="hero-background mobile-bg">
-        <img :src="mobileImage" alt="Leadership Development Program" class="background-image">
+        <img :src="mobileImage" alt="Tech Training Program" class="background-image">
       </div>
       
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
-            <h1 class="program-hero-title">Leadership Development</h1>
-            <p class="program-hero-subtitle">Empowering Transformational Leaders for Impact Beyond Themselves</p>
+            <h1 class="program-hero-title">Tech Training</h1>
+            <p class="program-hero-subtitle">Equipping Youth with Essential Digital Skills for the Future Economy</p>
           </div>
         </div>
       </div>
@@ -45,14 +45,14 @@ const navigateToProgram = (program) => {
         <div class="program-nav-container">
           <button 
             @click="navigateToProgram('programs')" 
-            class="program-nav-btn active"
+            class="program-nav-btn"
           >
             <i class="fas fa-crown program-nav-icon"></i>
             Leadership
           </button>
           <button 
             @click="navigateToProgram('tech')" 
-            class="program-nav-btn"
+            class="program-nav-btn active"
           >
             <i class="fas fa-laptop-code program-nav-icon"></i>
             Tech Training
@@ -74,31 +74,32 @@ const navigateToProgram = (program) => {
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="overview-content">
-              <h2 class="section-title">Transformational Leader Program</h2>
+              <h2 class="section-title">Technology Training Programs</h2>
               <div class="accent-line"></div>
               <p class="overview-text">
-                A comprehensive program designed to empower young individuals with the skills, 
-                knowledge, and support necessary to excel in life and create impact beyond themselves. 
-                Our mentorship, transition management, and gender-specific programs are set on a 
-                path of shaping the next generation of confident, capable, and visionary leaders.
+                Our technology programs are designed to equip young people with essential digital 
+                and technical skills that are practical, relevant, and forward-looking. In today's 
+                fast-evolving digital world, technological fluency is not optional—it's foundational. 
+                Through immersive, hands-on training, we prepare participants to confidently navigate 
+                and innovate in the tech-driven global economy.
               </p>
               
               <div class="program-highlights">
                 <div class="highlight-item">
-                  <i class="fas fa-users highlight-icon"></i>
-                  <span>Group & One-on-One Mentorship</span>
+                  <i class="fas fa-brain highlight-icon"></i>
+                  <span>Critical Thinking & Problem-Solving</span>
                 </div>
                 <div class="highlight-item">
-                  <i class="fas fa-road highlight-icon"></i>
-                  <span>Transition Management</span>
+                  <i class="fas fa-briefcase highlight-icon"></i>
+                  <span>Job-Ready Technical Skills</span>
                 </div>
                 <div class="highlight-item">
-                  <i class="fas fa-venus-mars highlight-icon"></i>
-                  <span>Gender-Specific Programs</span>
+                  <i class="fas fa-graduation-cap highlight-icon"></i>
+                  <span>Career & Entrepreneurship Preparation</span>
                 </div>
                 <div class="highlight-item">
-                  <i class="fas fa-network-wired highlight-icon"></i>
-                  <span>Professional Networking</span>
+                  <i class="fas fa-bridge highlight-icon"></i>
+                  <span>Bridging the Digital Gap</span>
                 </div>
               </div>
             </div>
@@ -106,10 +107,10 @@ const navigateToProgram = (program) => {
           
           <div class="col-lg-6">
             <div class="program-image-container">
-              <img src="/boysA.jpeg" alt="Leadership Development" class="program-main-image">
+              <img src="/apexcel1.jpeg" alt="Tech Training" class="program-main-image">
               <div class="image-badge">
-                <i class="fas fa-crown"></i>
-                Leadership
+                <i class="fas fa-laptop-code"></i>
+                Tech Training
               </div>
             </div>
           </div>
@@ -121,84 +122,80 @@ const navigateToProgram = (program) => {
     <section class="program-components">
       <div class="container">
         <div class="section-header text-center mb-5">
-          <h2 class="section-main-title">Program Components</h2>
-          <p class="section-subtitle">Comprehensive leadership development through specialized tracks</p>
+          <h2 class="section-main-title">Training Modules</h2>
+          <p class="section-subtitle">Comprehensive tech education through specialized tracks</p>
           <div class="accent-line mx-auto"></div>
         </div>
 
         <div class="row g-4">
-          <!-- Mentorship & Coaching -->
+          <!-- Digital Literacy -->
           <div class="col-lg-4 col-md-6">
             <div class="component-card">
               <div class="component-icon">
-                <i class="fas fa-venus-mars"></i>
+                <i class="fas fa-desktop"></i>
               </div>
-              <h3 class="component-title">Gender-Specific Programs</h3>
+              <h3 class="component-title">Digital Literacy</h3>
               <p class="component-description">
-                Tailored programs addressing unique challenges and opportunities for young 
-                men and women through our Shujaa and Ayana initiatives.
+                Foundational digital skills for beginners and those looking to solidify their 
+                tech basics. Learn to effectively operate, troubleshoot, and maintain computer systems.
               </p>
               
               <div class="focus-areas">
-                <h4>Program Tracks:</h4>
-                <div class="gender-programs">
-                  <div class="gender-program shujaa">
-                    <h5><i class="fas fa-male"></i> Shujaa Program</h5>
-                    <p>Developing honorable men, responsible fathers, and authentic masculinity</p>
-                  </div>
-                  <div class="gender-program ayana">
-                    <h5><i class="fas fa-female"></i> Ayana Program</h5>
-                    <p>Empowering women to embrace womanhood as a gift and lead with confidence</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-          </div>
-
-          <!-- Transition Management -->
-          <div class="col-lg-4 col-md-6">
-            <div class="component-card">
-              <div class="component-icon">
-                <i class="fas fa-exchange-alt"></i>
-              </div>
-              <h3 class="component-title">Transition Management</h3>
-              <p class="component-description">
-                Helping young people navigate key life changes smoothly with clarity of direction 
-                and a sense of purpose during critical transition periods.
-              </p>
-              
-              <div class="focus-areas">
-                <h4>Thematic Areas:</h4>
+                <h4>Curriculum Includes:</h4>
                 <ul>
-                  <li><i class="fas fa-user-graduate"></i> High School to University</li>
-                  <li><i class="fas fa-building"></i> College to Corporate</li>
-                  <li><i class="fas fa-life-ring"></i> Life & Social Skills</li>
-                  <li><i class="fas fa-pray"></i> Spiritual Formation</li>
+                  <li><i class="fas fa-microchip"></i> Computer Hardware & Software Fundamentals</li>
+                  <li><i class="fas fa-shield-alt"></i> Internet Safety & Responsible Online Behavior</li>
+                  <li><i class="fas fa-tools"></i> Productivity Tools (Microsoft Office, Google Workspace)</li>
+                  <li><i class="fas fa-wifi"></i> Basic Networking Concepts</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Gender-Specific Programs -->
+          <!-- Cybersecurity -->
           <div class="col-lg-4 col-md-6">
             <div class="component-card">
               <div class="component-icon">
-                <i class="fas fa-hands-helping"></i>
+                <i class="fas fa-user-shield"></i>
               </div>
-              <h3 class="component-title">Mentorship & Coaching</h3>
+              <h3 class="component-title">Cybersecurity Essentials</h3>
               <p class="component-description">
-                Skill building, guidance, and motivation to help young individuals attain 
-                personal and professional growth through experienced mentors in various fields.
+                As digital threats continue to grow, we believe in raising a generation of 
+                cyber-aware individuals with practical skills in securing systems and online presence.
               </p>
               
               <div class="focus-areas">
-                <h4>Key Focus Areas:</h4>
+                <h4>Key Learning Areas:</h4>
                 <ul>
-                  <li><i class="fas fa-user-check"></i> Personal Development</li>
-                  <li><i class="fas fa-briefcase"></i> Career Coaching</li>
-                  <li><i class="fas fa-comments"></i> Leadership Training</li>
-                  <li><i class="fas fa-handshake"></i> Networking & Exposure</li>
+                  <li><i class="fas fa-book"></i> Cybersecurity Principles & Theory</li>
+                  <li><i class="fas fa-lock"></i> Securing Systems & Online Presence</li>
+                  <li><i class="fas fa-user-secret"></i> Ethical Hacking Introduction</li>
+                  <li><i class="fas fa-eye"></i> Online Privacy Best Practices</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="col-lg-4 col-md-6">
+            <div class="component-card">
+              <div class="component-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="component-title">Web Development</h3>
+              <p class="component-description">
+                Hands-on training in creating modern, responsive websites and web applications. 
+                From basic HTML to full-stack development concepts.
+              </p>
+              
+              <div class="focus-areas">
+                <h4>Development Stack:</h4>
+                <ul>
+                  <li><i class="fab fa-html5"></i> HTML5 & CSS3 Fundamentals</li>
+                  <li><i class="fab fa-js-square"></i> JavaScript & Interactive Web Pages</li>
+                  <li><i class="fas fa-mobile-alt"></i> Responsive Design Principles</li>
+                  <li><i class="fas fa-server"></i> Basic Backend Concepts</li>
+                  <li><i class="fab fa-git-alt"></i> Version Control with Git</li>
                 </ul>
               </div>
             </div>
@@ -207,39 +204,117 @@ const navigateToProgram = (program) => {
       </div>
     </section>
 
-    <!-- Program Approach -->
+    <!-- Program Objectives -->
     <section class="program-approach">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-10 mx-auto">
             <div class="approach-content text-center">
-              <h2 class="section-main-title">Our Approach</h2>
+              <h2 class="section-main-title">Our Key Objectives</h2>
               <div class="accent-line mx-auto mb-4"></div>
-              <p class="approach-text">
-                We believe in practical, hands-on leadership development that combines:
-              </p>
               
               <div class="approach-features">
                 <div class="approach-item">
-                  <i class="fas fa-user-friends approach-icon"></i>
-                  <h4>One-on-One Coaching</h4>
-                  <p>Personalized guidance from experienced mentors</p>
+                  <i class="fas fa-lightbulb approach-icon"></i>
+                  <h4>Critical Thinking</h4>
+                  <p>Foster problem-solving abilities through hands-on experience with real-world tech projects</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-users approach-icon"></i>
-                  <h4>Group Mentorship</h4>
-                  <p>Collaborative learning and peer support</p>
+                  <i class="fas fa-tools approach-icon"></i>
+                  <h4>Practical Skills</h4>
+                  <p>Equip participants with job-ready technical skills for the digital economy</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-project-diagram approach-icon"></i>
-                  <h4>Networking Opportunities</h4>
-                  <p>Connections with professionals across industries</p>
+                  <i class="fas fa-briefcase approach-icon"></i>
+                  <h4>Career Preparation</h4>
+                  <p>Prepare for future careers or entrepreneurial ventures in technology-driven fields</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-hands approach-icon"></i>
-                  <h4>Practical Application</h4>
-                  <p>Real-world projects and community engagement</p>
+                  <i class="fas fa-hands-helping approach-icon"></i>
+                  <h4>Digital Inclusion</h4>
+                  <p>Bridge the digital gap by making tech education accessible to youth from all backgrounds</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Approach -->
+    <section class="program-formats">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-main-title">Our Training Approach</h2>
+          <p class="section-subtitle">Practical, industry-aligned learning methodology</p>
+          <div class="accent-line mx-auto"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="format-card">
+              <div class="format-icon project-based">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3 class="format-title">Project-Based Learning</h3>
+              <p class="format-description">
+                Learn by doing with real-world projects that simulate industry scenarios and 
+                build practical problem-solving skills.
+              </p>
+              <div class="approach-benefits">
+                <span class="benefit-tag">Portfolio Building</span>
+                <span class="benefit-tag">Real Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="format-card">
+              <div class="format-icon industry-led">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h3 class="format-title">Industry-Aligned Training</h3>
+              <p class="format-description">
+                Led by industry professionals who bring current market insights and practical 
+                knowledge to the classroom.
+              </p>
+              <div class="approach-benefits">
+                <span class="benefit-tag">Expert Instructors</span>
+                <span class="benefit-tag">Market Relevant</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="format-card">
+              <div class="format-icon peer-learning">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="format-title">Peer-to-Peer Learning</h3>
+              <p class="format-description">
+                Collaborative environment with workshops, group projects, and knowledge sharing 
+                among participants.
+              </p>
+              <div class="approach-benefits">
+                <span class="benefit-tag">Team Collaboration</span>
+                <span class="benefit-tag">Network Building</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="format-card">
+              <div class="format-icon mentorship">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3 class="format-title">Professional Mentorship</h3>
+              <p class="format-description">
+                Guidance from seasoned tech professionals providing career advice, technical 
+                insights, and industry connections.
+              </p>
+              <div class="approach-benefits">
+                <span class="benefit-tag">Career Guidance</span>
+                <span class="benefit-tag">Industry Network</span>
               </div>
             </div>
           </div>
@@ -252,49 +327,49 @@ const navigateToProgram = (program) => {
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-main-title">Program Formats</h2>
-          <p class="section-subtitle">Flexible scheduling to accommodate different needs</p>
+          <p class="section-subtitle">Flexible training schedules to suit different learning needs</p>
           <div class="accent-line mx-auto"></div>
         </div>
 
         <div class="row g-4 justify-content-center">
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
-              <div class="format-icon daily-format">
-                <i class="fas fa-calendar-day"></i>
+              <div class="format-icon intensive-format">
+                <i class="fas fa-bolt"></i>
               </div>
-              <h3 class="format-title">Daily Format</h3>
-              <p class="format-duration">3-7 Days Intensive</p>
+              <h3 class="format-title">Intensive Bootcamp</h3>
+              <p class="format-duration">4-8 Weeks Full-Time</p>
               <p class="format-description">
-                Meeting daily at a chosen location with participants for immersive, 
-                focused leadership development sessions.
+                Immersive, full-day training for rapid skill acquisition and career transition 
+                into the tech industry.
               </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
-              <div class="format-icon camp-format">
-                <i class="fas fa-campground"></i>
+              <div class="format-icon parttime-format">
+                <i class="fas fa-clock"></i>
               </div>
-              <h3 class="format-title">Camp Format</h3>
-              <p class="format-duration">3-5 Days Intensive</p>
+              <h3 class="format-title">Part-Time Program</h3>
+              <p class="format-duration">12-16 Weeks Evening/Weekend</p>
               <p class="format-description">
-                Residential camp experience with intensive leadership training, 
-                team building, and personal development activities.
+                Flexible schedule for students and working professionals to learn tech skills 
+                while maintaining other commitments.
               </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
-              <div class="format-icon weekly-format">
-                <i class="fas fa-calendar-week"></i>
+              <div class="format-icon workshop-format">
+                <i class="fas fa-gem"></i>
               </div>
-              <h3 class="format-title">Weekly Format</h3>
-              <p class="format-duration">5-10 Weeks Program</p>
+              <h3 class="format-title">Specialized Workshops</h3>
+              <p class="format-duration">1-3 Days Intensive</p>
               <p class="format-description">
-                Weekly sessions over several months, culminating with a camp experience 
-                and celebration ceremony with prizes.
+                Focused training on specific tech skills like cybersecurity, web development, 
+                or digital tools mastery.
               </p>
             </div>
           </div>
@@ -309,7 +384,61 @@ const navigateToProgram = (program) => {
 </template>
 
 <style scoped>
-/* Program Hero Section */
+/* Reusing the same CSS structure from Leadership page with tech-specific colors */
+
+/* Tech-specific badge color */
+.image-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Tech-specific format colors */
+.project-based {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.industry-led {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.peer-learning {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.mentorship {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.intensive-format {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.parttime-format {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.workshop-format {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Benefit tags for approach section */
+.approach-benefits {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.benefit-tag {
+  background: rgba(20, 101, 167, 0.1);
+  color: rgb(20, 101, 167);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* All other CSS remains the same as Leadership page */
 .program-hero-section {
   position: relative;
   min-height: 50vh;
@@ -485,7 +614,6 @@ const navigateToProgram = (program) => {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgb(20, 101, 167);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -587,32 +715,6 @@ const navigateToProgram = (program) => {
   font-size: 0.8rem;
 }
 
-.gender-programs {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.gender-program {
-  padding: 1rem;
-  border-radius: 10px;
-  background: #f8f9fa;
-}
-
-.gender-program h5 {
-  color: rgb(20, 101, 167);
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.gender-program p {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
 /* Program Approach */
 .program-approach {
   padding: 5rem 0;
@@ -620,13 +722,7 @@ const navigateToProgram = (program) => {
 }
 
 .approach-content {
-  max-width: 800px;
-}
-
-.approach-text {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 3rem;
+  max-width: 1000px;
 }
 
 .approach-features {
@@ -689,18 +785,6 @@ const navigateToProgram = (program) => {
   color: white;
 }
 
-.daily-format {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.camp-format {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.weekly-format {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
 .format-title {
   color: rgb(20, 101, 167);
   font-size: 1.5rem;
@@ -719,7 +803,6 @@ const navigateToProgram = (program) => {
   line-height: 1.6;
   margin: 0;
 }
-
 
 
 /* Responsive Design */

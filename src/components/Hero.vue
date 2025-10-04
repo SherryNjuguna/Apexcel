@@ -15,7 +15,7 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
     <section class="hero-section">
       <!-- Background Image -->
       <img
-        src="/apexcel1.jpeg"
+        src="/heroA1.jpg"
         alt="Apexcel Background"
         class="hero-image"
       />
