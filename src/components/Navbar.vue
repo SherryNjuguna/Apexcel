@@ -22,7 +22,7 @@ const navLinks = [
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: white;">
       <!-- Logo -->
       <a class="navbar-brand ms-4" href="#">
-        <img src="/apexcel logo.jpeg" alt="Logo" class="logo-image" style="width: 100px; height: 50px;">
+        <img src="/apexlogo1.jpg" alt="Logo" class="logo-image" style="width: 120px; height: 70px;">
       </a>
   
       <!-- Blue toggler button -->

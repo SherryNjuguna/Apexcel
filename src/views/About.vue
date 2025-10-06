@@ -1,8 +1,10 @@
 <script setup>
+// Components
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import { ref } from 'vue'
 
+// Hero section images
 const desktopImage = ref('/heroA11.jpg')
 const mobileImage = ref('/heroA1.jpg')
 </script>
@@ -13,20 +15,17 @@ const mobileImage = ref('/heroA1.jpg')
     
     <!-- Hero Section -->
     <section class="about-hero-section">
-      <!-- Dark overlay for better text contrast -->
       <div class="hero-overlay"></div>
       
-      <!-- Desktop Background Image -->
+      <!-- Background Images -->
       <div class="hero-background desktop-bg">
         <img :src="desktopImage" alt="About Apexcel Ventures" class="background-image">
       </div>
-      
-      <!-- Mobile Background Image -->
       <div class="hero-background mobile-bg">
         <img :src="mobileImage" alt="About Apexcel Ventures" class="background-image">
       </div>
       
-      <!-- Content Overlay -->
+      <!-- Hero Content -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
@@ -36,7 +35,7 @@ const mobileImage = ref('/heroA1.jpg')
       </div>
     </section>
 
-    <!-- About Us & Background Section -->
+    <!-- About Content Section -->
     <section class="about-content-section">
       <div class="container">
         <div class="row align-items-center">
@@ -48,7 +47,7 @@ const mobileImage = ref('/heroA1.jpg')
               
               <div class="about-text">
                 <p>
-                  <strong>Apexcel is a leadership development venture </strong> with the focus of growing 
+                  <strong>Apexcel is a leadership development venture</strong> with the focus of growing 
                   young people into impactful and transformational leaders by equipping them with the tools 
                   necessary to identify and fill gaps in society.
                 </p>
@@ -108,7 +107,7 @@ const mobileImage = ref('/heroA1.jpg')
           <!-- Mission Card -->
           <div class="col-lg-4 col-md-6">
             <div class="foundation-card">
-              <div class="card-icon mission-icon">
+              <div class="card-icon">
                 <i class="fas fa-rocket"></i>
               </div>
               <h3 class="card-title">Our Mission</h3>
@@ -123,13 +122,13 @@ const mobileImage = ref('/heroA1.jpg')
           <!-- Vision Card -->
           <div class="col-lg-4 col-md-6">
             <div class="foundation-card">
-              <div class="card-icon vision-icon">
+              <div class="card-icon">
                 <i class="fas fa-eye"></i>
               </div>
               <h3 class="card-title">Our Vision</h3>
               <p class="card-description">
                 Develop a generation of visionary leaders, innovative thinkers, and successful 
-                entrepreneurs who will drive positive change in their communities and beyond.
+                entrepreneurs.
               </p>
             </div>
           </div>
@@ -137,40 +136,30 @@ const mobileImage = ref('/heroA1.jpg')
           <!-- Values Card -->
           <div class="col-lg-4 col-md-6">
             <div class="foundation-card">
-              <div class="card-icon values-icon">
+              <div class="card-icon">
                 <i class="fas fa-star"></i>
               </div>
               <h3 class="card-title">Core Values</h3>
               <div class="values-list">
                 <div class="value-item">
                   <i class="fas fa-shield-alt value-icon"></i>
-                  <div>
-                    <strong>Integrity:</strong> Building trust through accountability
-                  </div>
+                  <div><strong>Integrity:</strong> Building trust through accountability</div>
                 </div>
                 <div class="value-item">
                   <i class="fas fa-trophy value-icon"></i>
-                  <div>
-                    <strong>Excellence:</strong> Delivering beyond expectations
-                  </div>
+                  <div><strong>Excellence:</strong> Delivering beyond expectations</div>
                 </div>
                 <div class="value-item">
                   <i class="fas fa-bullseye value-icon"></i>
-                  <div>
-                    <strong>Impact:</strong> Creating lasting transformation
-                  </div>
+                  <div><strong>Impact:</strong> Creating lasting transformation</div>
                 </div>
                 <div class="value-item">
                   <i class="fas fa-users value-icon"></i>
-                  <div>
-                    <strong>Youth First:</strong> Prioritizing young people
-                  </div>
+                  <div><strong>Youth First:</strong> Prioritizing young people</div>
                 </div>
                 <div class="value-item">
                   <i class="fas fa-user-tie value-icon"></i>
-                  <div>
-                    <strong>Professionalism:</strong> Maintaining high standards
-                  </div>
+                  <div><strong>Professionalism:</strong> Maintaining high standards</div>
                 </div>
               </div>
             </div>
@@ -189,74 +178,15 @@ const mobileImage = ref('/heroA1.jpg')
         </div>
 
         <div class="row g-4 justify-content-center">
-          <!-- Team Member 1 -->
-          <div class="col-lg-4 col-md-6">
+          <!-- Team Members -->
+          <div class="col-lg-4 col-md-6" v-for="member in teamMembers" :key="member.name">
             <div class="team-card">
               <div class="team-photo">
-                <img src="/sam2.jpg" alt="Samuel Simiyu" class="member-image">
+                <img :src="member.photo" :alt="member.name" class="member-image">
               </div>
               <div class="team-info">
-                <h3 class="member-name">Samuel Simiyu</h3>
-                <p class="member-role">Partnerships and Business Development Director</p>
-                
-              </div>
-            </div>
-          </div>
-
-          <!-- Team Member 2 -->
-       
-
-          <!-- Team Member 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="team-card">
-              <div class="team-photo">
-                <img src="/Hillary.jpg" alt="Team Member" class="member-image">
-              </div>
-              <div class="team-info">
-                <h3 class="member-name">Hillary Soh</h3>
-                <p class="member-role">Programs lead and MERL officer</p>
-               
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6">
-            <div class="team-card">
-              <div class="team-photo">
-                <img src="/GeeA.jpg" alt="Grace Nieri" class="member-image">
-              </div>
-              <div class="team-info">
-                <h3 class="member-name">Grace Njuguna</h3>
-                <p class="member-role"> Operations, Tech and Curriculums Lead</p>
-                
-              </div>
-            </div>
-          </div>
-          <!-- Team Member 4 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="team-card">
-              <div class="team-photo">
-                <img src="/Becky.jpeg" alt="Team Member" class="member-image">
-              </div>
-              <div class="team-info">
-                <h3 class="member-name">Rebbeca Mwema</h3>
-                <p class="member-role">Team Admin, legal and Child protection officer</p>
-                
-              </div>
-            </div>
-          </div>
-
-          <!-- Team Member 5 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="team-card">
-              <div class="team-photo">
-                <img src="/Masamki.jpg" alt="Team Member" class="member-image">
-              </div>
-              <div class="team-info">
-                <h3 class="member-name">Sammy Maina</h3>
-                <p class="member-role">Communications and Marketing director</p>
-                
+                <h3 class="member-name">{{ member.name }}</h3>
+                <p class="member-role">{{ member.role }}</p>
               </div>
             </div>
           </div>
@@ -268,8 +198,58 @@ const mobileImage = ref('/heroA1.jpg')
   </div>
 </template>
 
+<script>
+// Team data - moved to separate script for better organization
+export default {
+  data() {
+    return {
+      teamMembers: [
+        {
+          name: "Samuel Simiyu",
+          role: "Partnerships and Business Development Director",
+          photo: "/sam2.jpg"
+        },
+        {
+          name: "Hillary Soh",
+          role: "Programs lead and MERL officer",
+          photo: "/Hillary.jpg"
+        },
+        {
+          name: "Grace Njuguna",
+          role: "Operations, Tech and Curriculums Lead",
+          photo: "/GeeA.jpg"
+        },
+        {
+          name: "Rebecca Mwema",
+          role: "Team Admin, legal and Child protection officer",
+          photo: "/becky.jpg"
+        },
+        {
+          name: "Sammy Maina",
+          role: "Communications and Marketing director",
+          photo: "/Masamki.jpg"
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
-/* About Hero Section */
+/* ===== CSS VARIABLES ===== */
+:root {
+  --primary-blue: rgb(20, 101, 167);
+  --primary-dark: rgb(12, 65, 107);
+  --text-dark: #333;
+  --text-light: #555;
+  --text-muted: #666;
+  --bg-light: #f8f9fa;
+  --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+  --transition: all 0.3s ease;
+}
+
+/* ===== HERO SECTION ===== */
 .about-hero-section {
   position: relative;
   min-height: 50vh;
@@ -280,20 +260,14 @@ const mobileImage = ref('/heroA1.jpg')
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
 .hero-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 0;
 }
 
@@ -304,12 +278,9 @@ const mobileImage = ref('/heroA1.jpg')
   object-position: center;
 }
 
-.desktop-bg {
-  display: block;
-}
-.mobile-bg {
-  display: none;
-}
+/* Background image switching */
+.desktop-bg { display: block; }
+.mobile-bg { display: none; }
 
 .about-hero-section .container {
   position: relative;
@@ -324,7 +295,7 @@ const mobileImage = ref('/heroA1.jpg')
   margin: 0;
 }
 
-/* About Content Section */
+/* ===== ABOUT CONTENT SECTION ===== */
 .about-content-section {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -393,7 +364,7 @@ const mobileImage = ref('/heroA1.jpg')
   z-index: -1;
 }
 
-/* Mission Section */
+/* ===== MISSION SECTION ===== */
 .mission-section {
   padding: 5rem 0;
   background: white;
@@ -443,17 +414,6 @@ const mobileImage = ref('/heroA1.jpg')
   margin: 0 auto 1.5rem auto;
   font-size: 2rem;
   color: rgb(20, 101, 167);
-}
-
-.mission-icon {
-  background: rgba(20, 101, 167, 0.1);
-}
-
-.vision-icon {
-  background: rgba(20, 101, 167, 0.1);
-}
-
-.values-icon {
   background: rgba(20, 101, 167, 0.1);
 }
 
@@ -501,7 +461,7 @@ const mobileImage = ref('/heroA1.jpg')
   flex-shrink: 0;
 }
 
-/* Team Section */
+/* ===== TEAM SECTION ===== */
 .team-section {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -548,35 +508,10 @@ const mobileImage = ref('/heroA1.jpg')
   color: #666;
   font-size: 0.9rem;
   font-weight: 500;
-  margin: 0 0 1rem 0;
+  margin: 0;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.social-link {
-  color: rgb(20, 101, 167);
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(20, 101, 167, 0.1);
-}
-
-.social-link:hover {
-  background: rgb(20, 101, 167);
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .about-hero-section {
     min-height: 40vh;
@@ -619,6 +554,10 @@ const mobileImage = ref('/heroA1.jpg')
     gap: 0.5rem;
     text-align: center;
   }
+  
+  /* Switch to mobile background */
+  .desktop-bg { display: none; }
+  .mobile-bg { display: block; }
 }
 
 @media (max-width: 480px) {
@@ -636,15 +575,6 @@ const mobileImage = ref('/heroA1.jpg')
   
   .about-text {
     font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .desktop-bg {
-    display: none;
-  }
-  .mobile-bg {
-    display: block;
   }
 }
 </style>

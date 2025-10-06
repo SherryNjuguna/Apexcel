@@ -8,6 +8,7 @@ const router = useRouter()
 const desktopImage = ref('/heroA11.jpg')
 const mobileImage = ref('/heroA1.jpg')
 
+// Navigate to specific program page
 const navigateToProgram = (program) => {
   router.push(`/${program}`)
 }
@@ -21,14 +22,15 @@ const navigateToProgram = (program) => {
     <section class="program-hero-section">
       <div class="hero-overlay"></div>
       
+      <!-- Background Images -->
       <div class="hero-background desktop-bg">
         <img :src="desktopImage" alt="Tech Training Program" class="background-image">
       </div>
-      
       <div class="hero-background mobile-bg">
         <img :src="mobileImage" alt="Tech Training Program" class="background-image">
       </div>
       
+      <!-- Hero Content -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
@@ -79,35 +81,16 @@ const navigateToProgram = (program) => {
               <p class="overview-text">
                 Our technology programs are designed to equip young people with essential digital 
                 and technical skills that are practical, relevant, and forward-looking. In today's 
-                fast-evolving digital world, technological fluency is not optional—it's foundational. 
+                fast-evolving digital world, technological fluency is not optional, it's foundational. 
                 Through immersive, hands-on training, we prepare participants to confidently navigate 
                 and innovate in the tech-driven global economy.
               </p>
-              
-              <div class="program-highlights">
-                <div class="highlight-item">
-                  <i class="fas fa-brain highlight-icon"></i>
-                  <span>Critical Thinking & Problem-Solving</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-briefcase highlight-icon"></i>
-                  <span>Job-Ready Technical Skills</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-graduation-cap highlight-icon"></i>
-                  <span>Career & Entrepreneurship Preparation</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-bridge highlight-icon"></i>
-                  <span>Bridging the Digital Gap</span>
-                </div>
-              </div>
             </div>
           </div>
           
           <div class="col-lg-6">
             <div class="program-image-container">
-              <img src="/apexcel1.jpeg" alt="Tech Training" class="program-main-image">
+              <img src="/tech.jpg" alt="Tech Training" class="program-main-image">
               <div class="image-badge">
                 <i class="fas fa-laptop-code"></i>
                 Tech Training
@@ -146,7 +129,6 @@ const navigateToProgram = (program) => {
                   <li><i class="fas fa-microchip"></i> Computer Hardware & Software Fundamentals</li>
                   <li><i class="fas fa-shield-alt"></i> Internet Safety & Responsible Online Behavior</li>
                   <li><i class="fas fa-tools"></i> Productivity Tools (Microsoft Office, Google Workspace)</li>
-                  <li><i class="fas fa-wifi"></i> Basic Networking Concepts</li>
                 </ul>
               </div>
             </div>
@@ -242,7 +224,7 @@ const navigateToProgram = (program) => {
     </section>
 
     <!-- Training Approach -->
-    <section class="program-formats">
+    <section class="training-approach">
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-main-title">Our Training Approach</h2>
@@ -251,6 +233,7 @@ const navigateToProgram = (program) => {
         </div>
 
         <div class="row g-4 justify-content-center">
+          <!-- Project-Based Learning -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon project-based">
@@ -268,6 +251,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Industry-Led Training -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon industry-led">
@@ -285,6 +269,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Peer-to-Peer Learning -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon peer-learning">
@@ -302,6 +287,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Professional Mentorship -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon mentorship">
@@ -332,6 +318,7 @@ const navigateToProgram = (program) => {
         </div>
 
         <div class="row g-4 justify-content-center">
+          <!-- Intensive Bootcamp -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon intensive-format">
@@ -346,6 +333,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Part-Time Program -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon parttime-format">
@@ -360,6 +348,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Specialized Workshops -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon workshop-format">
@@ -376,69 +365,13 @@ const navigateToProgram = (program) => {
         </div>
       </div>
     </section>
-
-
     
     <Footer />
   </div>
 </template>
 
 <style scoped>
-/* Reusing the same CSS structure from Leadership page with tech-specific colors */
-
-/* Tech-specific badge color */
-.image-badge {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-/* Tech-specific format colors */
-.project-based {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.industry-led {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.peer-learning {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.mentorship {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
-
-.intensive-format {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.parttime-format {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.workshop-format {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-/* Benefit tags for approach section */
-.approach-benefits {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.benefit-tag {
-  background: rgba(20, 101, 167, 0.1);
-  color: rgb(20, 101, 167);
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
-/* All other CSS remains the same as Leadership page */
+/* ===== HERO SECTION STYLES ===== */
 .program-hero-section {
   position: relative;
   min-height: 50vh;
@@ -476,6 +409,7 @@ const navigateToProgram = (program) => {
 .desktop-bg {
   display: block;
 }
+
 .mobile-bg {
   display: none;
 }
@@ -502,7 +436,7 @@ const navigateToProgram = (program) => {
   opacity: 0.9;
 }
 
-/* Program Navigation */
+/* ===== PROGRAM NAVIGATION STYLES ===== */
 .program-navigation {
   background: white;
   padding: 1.5rem 0;
@@ -545,7 +479,7 @@ const navigateToProgram = (program) => {
   font-size: 1rem;
 }
 
-/* Program Overview */
+/* ===== PROGRAM OVERVIEW STYLES ===== */
 .program-overview {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -577,29 +511,6 @@ const navigateToProgram = (program) => {
   margin-bottom: 2rem;
 }
 
-.program-highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.highlight-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.highlight-icon {
-  color: rgb(20, 101, 167);
-  font-size: 1.2rem;
-  width: 30px;
-  text-align: center;
-}
-
 .program-image-container {
   position: relative;
 }
@@ -614,6 +525,7 @@ const navigateToProgram = (program) => {
   position: absolute;
   top: 20px;
   right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -623,7 +535,7 @@ const navigateToProgram = (program) => {
   gap: 0.5rem;
 }
 
-/* Program Components */
+/* ===== PROGRAM COMPONENTS STYLES ===== */
 .program-components {
   padding: 5rem 0;
   background: white;
@@ -715,7 +627,7 @@ const navigateToProgram = (program) => {
   font-size: 0.8rem;
 }
 
-/* Program Approach */
+/* ===== PROGRAM OBJECTIVES STYLES ===== */
 .program-approach {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -752,8 +664,8 @@ const navigateToProgram = (program) => {
   margin: 0;
 }
 
-/* Program Formats */
-.program-formats {
+/* ===== TRAINING APPROACH STYLES ===== */
+.training-approach {
   padding: 5rem 0;
   background: white;
 }
@@ -785,6 +697,35 @@ const navigateToProgram = (program) => {
   color: white;
 }
 
+/* Tech-specific format colors */
+.project-based {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.industry-led {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.peer-learning {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.mentorship {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.intensive-format {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.parttime-format {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.workshop-format {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
 .format-title {
   color: rgb(20, 101, 167);
   font-size: 1.5rem;
@@ -804,8 +745,25 @@ const navigateToProgram = (program) => {
   margin: 0;
 }
 
+/* Benefit tags for approach section */
+.approach-benefits {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
 
-/* Responsive Design */
+.benefit-tag {
+  background: rgba(20, 101, 167, 0.1);
+  color: rgb(20, 101, 167);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .program-hero-title {
     font-size: 2.5rem;
@@ -813,6 +771,14 @@ const navigateToProgram = (program) => {
   
   .program-hero-subtitle {
     font-size: 1.1rem;
+  }
+  
+  .desktop-bg {
+    display: none;
+  }
+  
+  .mobile-bg {
+    display: block;
   }
   
   .overview-content {
@@ -833,6 +799,23 @@ const navigateToProgram = (program) => {
   .approach-features {
     grid-template-columns: 1fr;
   }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-main-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .component-card,
+  .format-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -841,20 +824,11 @@ const navigateToProgram = (program) => {
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .section-main-title {
     font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .desktop-bg {
-    display: none;
-  }
-  .mobile-bg {
-    display: block;
   }
 }
 </style>

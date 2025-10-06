@@ -8,6 +8,7 @@ const router = useRouter()
 const desktopImage = ref('/heroA11.jpg')
 const mobileImage = ref('/heroA1.jpg')
 
+// Navigate to specific program page
 const navigateToProgram = (program) => {
   router.push(`/${program}`)
 }
@@ -21,14 +22,15 @@ const navigateToProgram = (program) => {
     <section class="program-hero-section">
       <div class="hero-overlay"></div>
       
+      <!-- Background Images -->
       <div class="hero-background desktop-bg">
         <img :src="desktopImage" alt="Leadership Development Program" class="background-image">
       </div>
-      
       <div class="hero-background mobile-bg">
         <img :src="mobileImage" alt="Leadership Development Program" class="background-image">
       </div>
       
+      <!-- Hero Content -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
@@ -82,31 +84,12 @@ const navigateToProgram = (program) => {
                 Our mentorship, transition management, and gender-specific programs are set on a 
                 path of shaping the next generation of confident, capable, and visionary leaders.
               </p>
-              
-              <div class="program-highlights">
-                <div class="highlight-item">
-                  <i class="fas fa-users highlight-icon"></i>
-                  <span>Group & One-on-One Mentorship</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-road highlight-icon"></i>
-                  <span>Transition Management</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-venus-mars highlight-icon"></i>
-                  <span>Gender-Specific Programs</span>
-                </div>
-                <div class="highlight-item">
-                  <i class="fas fa-network-wired highlight-icon"></i>
-                  <span>Professional Networking</span>
-                </div>
-              </div>
             </div>
           </div>
           
           <div class="col-lg-6">
             <div class="program-image-container">
-              <img src="/boysA.jpeg" alt="Leadership Development" class="program-main-image">
+              <img src="/sam by.jpg" alt="Leadership Development" class="program-main-image">
               <div class="image-badge">
                 <i class="fas fa-crown"></i>
                 Leadership
@@ -127,7 +110,7 @@ const navigateToProgram = (program) => {
         </div>
 
         <div class="row g-4">
-          <!-- Mentorship & Coaching -->
+          <!-- Gender-Specific Programs -->
           <div class="col-lg-4 col-md-6">
             <div class="component-card">
               <div class="component-icon">
@@ -144,16 +127,15 @@ const navigateToProgram = (program) => {
                 <div class="gender-programs">
                   <div class="gender-program shujaa">
                     <h5><i class="fas fa-male"></i> Shujaa Program</h5>
-                    <p>Developing honorable men, responsible fathers, and authentic masculinity</p>
+                    <p>The Shujaa Program guides young men to embrace authentic masculinity, live with purpose and values, and develop into responsible future leaders and fathers.</p>
                   </div>
                   <div class="gender-program ayana">
                     <h5><i class="fas fa-female"></i> Ayana Program</h5>
-                    <p>Empowering women to embrace womanhood as a gift and lead with confidence</p>
+                    <p>We empower young women to celebrate authentic femininity, pursue personal development, and become values-driven leaders who positively impact their communities.</p>
                   </div>
                 </div>
               </div>
             </div>
-         
           </div>
 
           <!-- Transition Management -->
@@ -171,16 +153,17 @@ const navigateToProgram = (program) => {
               <div class="focus-areas">
                 <h4>Thematic Areas:</h4>
                 <ul>
-                  <li><i class="fas fa-user-graduate"></i> High School to University</li>
-                  <li><i class="fas fa-building"></i> College to Corporate</li>
+                  <li><i class="fas fa-user-check"></i> Leadership and Personal Development.</li>
+                  <li><i class="fas fa-building"></i> Career Development</li>
                   <li><i class="fas fa-life-ring"></i> Life & Social Skills</li>
+                  <li><i class="fas fa-coins"></i> Entrepreneurship and Financial literacy</li>
                   <li><i class="fas fa-pray"></i> Spiritual Formation</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Gender-Specific Programs -->
+          <!-- Mentorship & Coaching -->
           <div class="col-lg-4 col-md-6">
             <div class="component-card">
               <div class="component-icon">
@@ -257,6 +240,7 @@ const navigateToProgram = (program) => {
         </div>
 
         <div class="row g-4 justify-content-center">
+          <!-- Daily Format -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon daily-format">
@@ -271,6 +255,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Camp Format -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon camp-format">
@@ -285,6 +270,7 @@ const navigateToProgram = (program) => {
             </div>
           </div>
 
+          <!-- Weekly Format -->
           <div class="col-lg-4 col-md-6">
             <div class="format-card">
               <div class="format-icon weekly-format">
@@ -301,15 +287,13 @@ const navigateToProgram = (program) => {
         </div>
       </div>
     </section>
-
-
     
     <Footer />
   </div>
 </template>
 
 <style scoped>
-/* Program Hero Section */
+/* ===== HERO SECTION STYLES ===== */
 .program-hero-section {
   position: relative;
   min-height: 50vh;
@@ -347,6 +331,7 @@ const navigateToProgram = (program) => {
 .desktop-bg {
   display: block;
 }
+
 .mobile-bg {
   display: none;
 }
@@ -373,7 +358,7 @@ const navigateToProgram = (program) => {
   opacity: 0.9;
 }
 
-/* Program Navigation */
+/* ===== PROGRAM NAVIGATION STYLES ===== */
 .program-navigation {
   background: white;
   padding: 1.5rem 0;
@@ -416,7 +401,7 @@ const navigateToProgram = (program) => {
   font-size: 1rem;
 }
 
-/* Program Overview */
+/* ===== PROGRAM OVERVIEW STYLES ===== */
 .program-overview {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -448,29 +433,6 @@ const navigateToProgram = (program) => {
   margin-bottom: 2rem;
 }
 
-.program-highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.highlight-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.highlight-icon {
-  color: rgb(20, 101, 167);
-  font-size: 1.2rem;
-  width: 30px;
-  text-align: center;
-}
-
 .program-image-container {
   position: relative;
 }
@@ -495,7 +457,7 @@ const navigateToProgram = (program) => {
   gap: 0.5rem;
 }
 
-/* Program Components */
+/* ===== PROGRAM COMPONENTS STYLES ===== */
 .program-components {
   padding: 5rem 0;
   background: white;
@@ -613,7 +575,7 @@ const navigateToProgram = (program) => {
   margin: 0;
 }
 
-/* Program Approach */
+/* ===== PROGRAM APPROACH STYLES ===== */
 .program-approach {
   padding: 5rem 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -656,7 +618,7 @@ const navigateToProgram = (program) => {
   margin: 0;
 }
 
-/* Program Formats */
+/* ===== PROGRAM FORMATS STYLES ===== */
 .program-formats {
   padding: 5rem 0;
   background: white;
@@ -720,9 +682,7 @@ const navigateToProgram = (program) => {
   margin: 0;
 }
 
-
-
-/* Responsive Design */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .program-hero-title {
     font-size: 2.5rem;
@@ -730,6 +690,14 @@ const navigateToProgram = (program) => {
   
   .program-hero-subtitle {
     font-size: 1.1rem;
+  }
+  
+  .desktop-bg {
+    display: none;
+  }
+  
+  .mobile-bg {
+    display: block;
   }
   
   .overview-content {
@@ -750,6 +718,23 @@ const navigateToProgram = (program) => {
   .approach-features {
     grid-template-columns: 1fr;
   }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-main-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .component-card,
+  .format-card {
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -758,20 +743,11 @@ const navigateToProgram = (program) => {
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .section-main-title {
     font-size: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .desktop-bg {
-    display: none;
-  }
-  .mobile-bg {
-    display: block;
   }
 }
 </style>
