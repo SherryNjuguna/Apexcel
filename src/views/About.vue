@@ -207,7 +207,7 @@ export default {
         {
           name: "Samuel Simiyu",
           role: "Partnerships and Business Development Director",
-          photo: "/sam2.jpg"
+          photo: "/sam11.jpg"
         },
         {
           name: "Hillary Soh",
@@ -217,7 +217,7 @@ export default {
         {
           name: "Grace Njuguna",
           role: "Operations, Tech and Curriculums Lead",
-          photo: "/GeeA.jpg"
+          photo: "/file.jpg"
         },
         {
           name: "Rebecca Mwema",
@@ -483,8 +483,8 @@ export default {
 }
 
 .team-photo {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 210px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1.5rem auto;

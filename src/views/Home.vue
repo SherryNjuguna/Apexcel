@@ -48,7 +48,7 @@ const navigateToAbout = () => {
               <span class="headline-item">Innovative Thinkers.</span>
               <span class="headline-item">Successful Entrepreneurs.</span>
             </h1>
-            <p class="tagline">Equipping young people for the journey ahead.</p>
+            <p class="tagline">Equipping people for the journey ahead.</p>
             
             <div class="action-buttons">
               <button @click="scrollToPrograms" class="btn btn-primary btn-program">
@@ -292,7 +292,7 @@ const navigateToAbout = () => {
 
 .intro-statement {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -302,8 +302,8 @@ const navigateToAbout = () => {
 
 .main-headline {
   color: #ffffff;
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);

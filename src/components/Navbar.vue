@@ -19,10 +19,10 @@ const navLinks = [
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(12, 65, 107)">
       <!-- Logo -->
       <a class="navbar-brand ms-4" href="#">
-        <img src="/apexlogo1.jpg" alt="Logo" class="logo-image" style="width: 120px; height: 70px;">
+        <img src="/apexlogo1.jpg" alt="Logo" class="logo-image" style="width: 100px; height: 60px;">
       </a>
   
       <!-- Blue toggler button -->
@@ -57,7 +57,7 @@ const navLinks = [
   <style scoped>
 
 .active-link {
-  color: #007bff;
+  color: #f8f9fa;
 }
 
 .active-link::after {
@@ -71,7 +71,7 @@ const navLinks = [
 
 /* Make nav links black & bold */
 .custom-link {
-  color: black;
+  color: white;
   font-weight: bold;
   position: relative;
   transition: color 0.3s;
@@ -79,7 +79,7 @@ const navLinks = [
 
 /* Hover effect with blue text and underline */
 .custom-link:hover {
-  color: #007bff; /* Bootstrap blue */
+  color: #7db8f8; /* Bootstrap blue */
 }
 
 .custom-link::after {

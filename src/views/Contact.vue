@@ -107,7 +107,8 @@ const toggleFaq = (index) => {
                     </div>
                     <div class="contact-text">
                       <h4>Email Us</h4>
-                      <p>apexceiventures@gmail.com</p>
+                      <p>apexcelventures@gmail.com</p>
+                      <p>info@apexcelventures.com</p>
                       <small>We respond within 24 hours</small>
                     </div>
                   </div>
