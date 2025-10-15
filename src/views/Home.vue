@@ -48,7 +48,7 @@ const navigateToAbout = () => {
               <span class="headline-item">Innovative Thinkers.</span>
               <span class="headline-item">Successful Entrepreneurs.</span>
             </h1>
-            <p class="tagline">Equipping people for the journey ahead.</p>
+            <p class="tagline">Equipping leaders, transforming tomorrow.</p>
             
             <div class="action-buttons">
               <button @click="scrollToPrograms" class="btn btn-primary btn-program">

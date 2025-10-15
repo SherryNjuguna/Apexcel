@@ -73,28 +73,16 @@ const navigateToProgram = (program) => {
     <!-- Program Overview -->
     <section class="program-overview">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="overview-content">
-              <h2 class="section-title">Transformational Leader Program</h2>
-              <div class="accent-line"></div>
-              <p class="overview-text">
-                A comprehensive program designed to empower young individuals with the skills, 
-                knowledge, and support necessary to excel in life and create impact beyond themselves. 
-                Our mentorship, transition management, and gender-specific programs are set on a 
-                path of shaping the next generation of confident, capable, and visionary leaders.
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-lg-6">
-            <div class="program-image-container">
-              <img src="/sam by.jpg" alt="Leadership Development" class="program-main-image">
-              <div class="image-badge">
-                <i class="fas fa-crown"></i>
-                Leadership
-              </div>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="section-title">Transformational Leader Program</h2>
+            <div class="accent-line mx-auto"></div>
+            <p class="overview-text">
+              A comprehensive program designed to empower young individuals with the skills, 
+              knowledge, and support necessary to excel in life and create impact beyond themselves. 
+              Our mentorship, transition management, and gender-specific programs are set on a 
+              path of shaping the next generation of confident, capable, and visionary leaders.
+            </p>
           </div>
         </div>
       </div>
@@ -104,85 +92,168 @@ const navigateToProgram = (program) => {
     <section class="program-components">
       <div class="container">
         <div class="section-header text-center mb-5">
-          <h2 class="section-main-title">Program Components</h2>
-          <p class="section-subtitle">Comprehensive leadership development through specialized tracks</p>
+          <h2 class="section-main-title">Our Leadership Programs</h2>
+          <p class="section-subtitle">Specialized tracks designed for comprehensive personal development</p>
           <div class="accent-line mx-auto"></div>
         </div>
 
-        <div class="row g-4">
-          <!-- Gender-Specific Programs -->
-          <div class="col-lg-4 col-md-6">
-            <div class="component-card">
-              <div class="component-icon">
-                <i class="fas fa-venus-mars"></i>
+        <div class="programs-grid">
+          <!-- Shujaa Program -->
+          <div class="program-card">
+            <div class="program-image">
+              <img src="/sam by.jpg" alt="Shujaa Program" class="img-fluid">
+              <div class="program-badge shujaa-badge">
+                <i class="fas fa-male"></i>
+                Shujaa Program
               </div>
-              <h3 class="component-title">Gender-Specific Programs</h3>
-              <p class="component-description">
-                Tailored programs addressing unique challenges and opportunities for young 
-                men and women through our Shujaa and Ayana initiatives.
+            </div>
+            <div class="program-content">
+              <h3 class="program-title">Shujaa Program</h3>
+              <p class="program-tagline">Raising a generation of men with a clear understanding of true manhood</p>
+              <p class="program-description">
+                The program aims to see young boys grown into good, young men, respectable husbands, 
+                responsible fathers, and honourable elders. The program formats allows them to understand 
+                manhood, explore identity, navigate personal and societal challenge with strength and 
+                build a purpose-driven life.
               </p>
-              
-              <div class="focus-areas">
-                <h4>Program Tracks:</h4>
-                <div class="gender-programs">
-                  <div class="gender-program shujaa">
-                    <h5><i class="fas fa-male"></i> Shujaa Program</h5>
-                    <p>The Shujaa Program guides young men to embrace authentic masculinity, live with purpose and values, and develop into responsible future leaders and fathers.</p>
-                  </div>
-                  <div class="gender-program ayana">
-                    <h5><i class="fas fa-female"></i> Ayana Program</h5>
-                    <p>We empower young women to celebrate authentic femininity, pursue personal development, and become values-driven leaders who positively impact their communities.</p>
-                  </div>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-user-check"></i>
+                  <span>Purposeful Living</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Values-Based Leadership</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>Identity Exploration</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-compass"></i>
+                  <span>Purpose-Driven Life</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ayana Program -->
+          <div class="program-card">
+            <div class="program-image">
+              <img src="/girls.jpg" alt="Ayana Program" class="img-fluid">
+              <div class="program-badge ayana-badge">
+                <i class="fas fa-female"></i>
+                Ayana Program
+              </div>
+            </div>
+            <div class="program-content">
+              <h3 class="program-title">Ayana Program</h3>
+              <p class="program-tagline">Empowering young women to celebrate authentic femininity</p>
+              <p class="program-description">
+                We empower young women to celebrate authentic femininity, pursue personal development, 
+                and become values-driven leaders who positively impact their communities. Through 
+                mentorship and tailored development tracks, we nurture confident, capable women 
+                ready to make meaningful contributions to society.
+              </p>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-heart"></i>
+                  <span>Authentic Femininity</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-star"></i>
+                  <span>Personal Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-hands-helping"></i>
+                  <span>Community Impact</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-crown"></i>
+                  <span>Values-Driven Leadership</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Transition Management -->
-          <div class="col-lg-4 col-md-6">
-            <div class="component-card">
-              <div class="component-icon">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="/transition.jpg" alt="Transition Management" class="img-fluid">
+              <div class="program-badge transition-badge">
                 <i class="fas fa-exchange-alt"></i>
+                Transition Management
               </div>
-              <h3 class="component-title">Transition Management</h3>
-              <p class="component-description">
+            </div>
+            <div class="program-content">
+              <h3 class="program-title">Transition Management</h3>
+              <p class="program-tagline">Navigating life changes with clarity and purpose</p>
+              <p class="program-description">
                 Helping young people navigate key life changes smoothly with clarity of direction 
-                and a sense of purpose during critical transition periods.
+                and a sense of purpose during critical transition periods. Our comprehensive 
+                approach supports youth through various life stages with practical tools and 
+                emotional support.
               </p>
-              
-              <div class="focus-areas">
-                <h4>Thematic Areas:</h4>
-                <ul>
-                  <li><i class="fas fa-user-check"></i> Leadership and Personal Development.</li>
-                  <li><i class="fas fa-building"></i> Career Development</li>
-                  <li><i class="fas fa-life-ring"></i> Life & Social Skills</li>
-                  <li><i class="fas fa-coins"></i> Entrepreneurship and Financial literacy</li>
-                  <li><i class="fas fa-pray"></i> Spiritual Formation</li>
-                </ul>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-user-check"></i>
+                  <span>Leadership Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-building"></i>
+                  <span>Career Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-life-ring"></i>
+                  <span>Life & Social Skills</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-coins"></i>
+                  <span>Financial Literacy</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-pray"></i>
+                  <span>Spiritual Formation</span>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Mentorship & Coaching -->
-          <div class="col-lg-4 col-md-6">
-            <div class="component-card">
-              <div class="component-icon">
+          <div class="program-card">
+            <div class="program-image">
+              <img src="/mentorship1.jpg" alt="Mentorship & Coaching" class="img-fluid">
+              <div class="program-badge mentorship-badge">
                 <i class="fas fa-hands-helping"></i>
+                Mentorship & Coaching
               </div>
-              <h3 class="component-title">Mentorship & Coaching</h3>
-              <p class="component-description">
+            </div>
+            <div class="program-content">
+              <h3 class="program-title">Mentorship & Coaching</h3>
+              <p class="program-tagline">Personalized guidance for growth and success</p>
+              <p class="program-description">
                 Skill building, guidance, and motivation to help young individuals attain 
-                personal and professional growth through experienced mentors in various fields.
+                personal and professional growth through experienced mentors in various fields. 
+                Our mentorship program connects youth with industry professionals for real-world 
+                insights and career development.
               </p>
-              
-              <div class="focus-areas">
-                <h4>Key Focus Areas:</h4>
-                <ul>
-                  <li><i class="fas fa-user-check"></i> Personal Development</li>
-                  <li><i class="fas fa-briefcase"></i> Career Coaching</li>
-                  <li><i class="fas fa-comments"></i> Leadership Training</li>
-                  <li><i class="fas fa-handshake"></i> Networking & Exposure</li>
-                </ul>
+              <div class="program-features">
+                <div class="feature-item">
+                  <i class="fas fa-user-check"></i>
+                  <span>Personal Development</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Career Coaching</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-comments"></i>
+                  <span>Leadership Training</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-handshake"></i>
+                  <span>Networking & Exposure</span>
+                </div>
               </div>
             </div>
           </div>
@@ -407,10 +478,6 @@ const navigateToProgram = (program) => {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
-.overview-content {
-  padding-right: 2rem;
-}
-
 .section-title {
   color: rgb(20, 101, 167);
   font-size: 2.5rem;
@@ -430,31 +497,8 @@ const navigateToProgram = (program) => {
   color: #555;
   line-height: 1.7;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.program-image-container {
-  position: relative;
-}
-
-.program-main-image {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.image-badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgb(20, 101, 167);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 /* ===== PROGRAM COMPONENTS STYLES ===== */
@@ -480,99 +524,127 @@ const navigateToProgram = (program) => {
   margin-bottom: 1.5rem;
 }
 
-.component-card {
+.programs-grid {
+  display: grid;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.program-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
   background: white;
-  padding: 2.5rem 2rem;
   border-radius: 20px;
+  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  height: 100%;
-  border: 2px solid transparent;
 }
 
-.component-card:hover {
+.program-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-  border-color: rgba(20, 101, 167, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.component-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: rgba(20, 101, 167, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem auto;
-  font-size: 2rem;
-  color: rgb(20, 101, 167);
+.program-card:nth-child(even) .program-image {
+  order: 2;
 }
 
-.component-title {
-  color: rgb(20, 101, 167);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
+.program-card:nth-child(even) .program-content {
+  order: 1;
 }
 
-.component-description {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  text-align: center;
+.program-image {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
 }
 
-.focus-areas h4 {
-  color: rgb(20, 101, 167);
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+.program-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.focus-areas ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.program-card:hover .program-image img {
+  transform: scale(1.05);
 }
 
-.focus-areas li {
-  color: #555;
-  margin-bottom: 0.5rem;
+.program-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.focus-areas i {
+.shujaa-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.ayana-badge {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.transition-badge {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.mentorship-badge {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.program-content {
+  padding: 2.5rem;
+}
+
+.program-title {
   color: rgb(20, 101, 167);
-  font-size: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-.gender-programs {
-  display: flex;
-  flex-direction: column;
+.program-tagline {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.program-description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.program-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.gender-program {
-  padding: 1rem;
-  border-radius: 10px;
-  background: #f8f9fa;
-}
-
-.gender-program h5 {
-  color: rgb(20, 101, 167);
-  margin-bottom: 0.5rem;
+.feature-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
 }
 
-.gender-program p {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0;
+.feature-item i {
+  color: rgb(20, 101, 167);
+  font-size: 0.8rem;
 }
 
 /* ===== PROGRAM APPROACH STYLES ===== */
@@ -700,11 +772,6 @@ const navigateToProgram = (program) => {
     display: block;
   }
   
-  .overview-content {
-    padding-right: 0;
-    margin-bottom: 3rem;
-  }
-  
   .program-nav-container {
     flex-direction: column;
     align-items: center;
@@ -713,6 +780,28 @@ const navigateToProgram = (program) => {
   .program-nav-btn {
     width: 200px;
     justify-content: center;
+  }
+  
+  .program-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .program-card:nth-child(even) .program-image,
+  .program-card:nth-child(even) .program-content {
+    order: unset;
+  }
+  
+  .program-image {
+    height: 250px;
+  }
+  
+  .program-content {
+    padding: 2rem;
+  }
+  
+  .program-features {
+    grid-template-columns: 1fr;
   }
   
   .approach-features {
@@ -731,7 +820,6 @@ const navigateToProgram = (program) => {
     font-size: 1.1rem;
   }
   
-  .component-card,
   .format-card {
     padding: 1.5rem;
   }
@@ -748,6 +836,10 @@ const navigateToProgram = (program) => {
   
   .section-main-title {
     font-size: 2rem;
+  }
+  
+  .program-content {
+    padding: 1.5rem;
   }
 }
 </style>

@@ -207,7 +207,7 @@ export default {
         {
           name: "Samuel Simiyu",
           role: "Partnerships and Business Development Director",
-          photo: "/sam11.jpg"
+          photo: "/sam11 (1).jpg"
         },
         {
           name: "Hillary Soh",
@@ -222,7 +222,7 @@ export default {
         {
           name: "Rebecca Mwema",
           role: "Team Admin, legal and Child protection officer",
-          photo: "/becky.jpg"
+          photo: "/becky (1).jpg"
         },
         {
           name: "Sammy Maina",
