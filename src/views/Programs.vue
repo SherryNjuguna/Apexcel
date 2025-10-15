@@ -1,41 +1,51 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 
-const router = useRouter()
-const desktopImage = ref('/heroA11.jpg')
-const mobileImage = ref('/heroA1.jpg')
+const router = useRouter();
+const desktopImage = ref("/heroA11.jpg");
+const mobileImage = ref("/heroA1.jpg");
 
 // Navigate to specific program page
 const navigateToProgram = (program) => {
-  router.push(`/${program}`)
-}
+  router.push(`/${program}`);
+};
 </script>
 
 <template>
   <div>
     <Navbar />
-    
+
     <!-- Hero Section -->
     <section class="program-hero-section">
       <div class="hero-overlay"></div>
-      
+
       <!-- Background Images -->
       <div class="hero-background desktop-bg">
-        <img :src="desktopImage" alt="Leadership Development Program" class="background-image">
+        <img
+          :src="desktopImage"
+          alt="Leadership Development Program"
+          class="background-image"
+        />
       </div>
       <div class="hero-background mobile-bg">
-        <img :src="mobileImage" alt="Leadership Development Program" class="background-image">
+        <img
+          :src="mobileImage"
+          alt="Leadership Development Program"
+          class="background-image"
+        />
       </div>
-      
+
       <!-- Hero Content -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
             <h1 class="program-hero-title">Leadership Development</h1>
-            <p class="program-hero-subtitle">Empowering Transformational Leaders for Impact Beyond Themselves</p>
+            <p class="program-hero-subtitle">
+              Empowering Transformational Leaders for Impact Beyond Themselves
+            </p>
           </div>
         </div>
       </div>
@@ -45,22 +55,19 @@ const navigateToProgram = (program) => {
     <section class="program-navigation">
       <div class="container">
         <div class="program-nav-container">
-          <button 
-            @click="navigateToProgram('programs')" 
+          <button
+            @click="navigateToProgram('programs')"
             class="program-nav-btn active"
           >
             <i class="fas fa-crown program-nav-icon"></i>
             Leadership
           </button>
-          <button 
-            @click="navigateToProgram('tech')" 
-            class="program-nav-btn"
-          >
+          <button @click="navigateToProgram('tech')" class="program-nav-btn">
             <i class="fas fa-laptop-code program-nav-icon"></i>
             Tech Training
           </button>
-          <button 
-            @click="navigateToProgram('entrepreneurship')" 
+          <button
+            @click="navigateToProgram('entrepreneurship')"
             class="program-nav-btn"
           >
             <i class="fas fa-rocket program-nav-icon"></i>
@@ -78,10 +85,12 @@ const navigateToProgram = (program) => {
             <h2 class="section-title">Transformational Leader Program</h2>
             <div class="accent-line mx-auto"></div>
             <p class="overview-text">
-              A comprehensive program designed to empower young individuals with the skills, 
-              knowledge, and support necessary to excel in life and create impact beyond themselves. 
-              Our mentorship, transition management, and gender-specific programs are set on a 
-              path of shaping the next generation of confident, capable, and visionary leaders.
+              A comprehensive program designed to empower young individuals with
+              the skills, knowledge, and support necessary to excel in life and
+              create impact beyond themselves. Our mentorship, transition
+              management, and gender-specific programs are set on a path of
+              shaping the next generation of confident, capable, and visionary
+              leaders.
             </p>
           </div>
         </div>
@@ -93,7 +102,9 @@ const navigateToProgram = (program) => {
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-main-title">Our Leadership Programs</h2>
-          <p class="section-subtitle">Specialized tracks designed for comprehensive personal development</p>
+          <p class="section-subtitle">
+            Specialized tracks designed for comprehensive personal development
+          </p>
           <div class="accent-line mx-auto"></div>
         </div>
 
@@ -101,7 +112,7 @@ const navigateToProgram = (program) => {
           <!-- Shujaa Program -->
           <div class="program-card">
             <div class="program-image">
-              <img src="/sam by.jpg" alt="Shujaa Program" class="img-fluid">
+              <img src="/sam by.jpg" alt="Shujaa Program" class="img-fluid" />
               <div class="program-badge shujaa-badge">
                 <i class="fas fa-male"></i>
                 Shujaa Program
@@ -109,12 +120,16 @@ const navigateToProgram = (program) => {
             </div>
             <div class="program-content">
               <h3 class="program-title">Shujaa Program</h3>
-              <p class="program-tagline">Raising a generation of men with a clear understanding of true manhood</p>
+              <p class="program-tagline">
+                Raising a generation of men with a clear understanding of true
+                manhood
+              </p>
               <p class="program-description">
-                The program aims to see young boys grown into good, young men, respectable husbands, 
-                responsible fathers, and honourable elders. The program formats allows them to understand 
-                manhood, explore identity, navigate personal and societal challenge with strength and 
-                build a purpose-driven life.
+                The program aims to see young boys grown into good, young men,
+                respectable husbands, responsible fathers, and honourable
+                elders. The program formats allows them to understand manhood,
+                explore identity, navigate personal and societal challenge with
+                strength and build a purpose-driven life.
               </p>
               <div class="program-features">
                 <div class="feature-item">
@@ -140,7 +155,7 @@ const navigateToProgram = (program) => {
           <!-- Ayana Program -->
           <div class="program-card">
             <div class="program-image">
-              <img src="/girls.jpg" alt="Ayana Program" class="img-fluid">
+              <img src="/girls.jpg" alt="Ayana Program" class="img-fluid" />
               <div class="program-badge ayana-badge">
                 <i class="fas fa-female"></i>
                 Ayana Program
@@ -148,12 +163,17 @@ const navigateToProgram = (program) => {
             </div>
             <div class="program-content">
               <h3 class="program-title">Ayana Program</h3>
-              <p class="program-tagline">Empowering young women to celebrate authentic femininity</p>
+              <p class="program-tagline">
+                Nurture a generation of young women who embrace authentic
+                womanhood, walk in godly confidence, and lead lives of purpose              </p>
               <p class="program-description">
-                We empower young women to celebrate authentic femininity, pursue personal development, 
-                and become values-driven leaders who positively impact their communities. Through 
-                mentorship and tailored development tracks, we nurture confident, capable women 
-                ready to make meaningful contributions to society.
+                
+                The program gently guides them through the sacred and powerful
+                process of embracing womanhood as a gift, while boldly
+                challenging them to step into their roles with confidence and
+                purpose. This journey nurtures growth—intellectual, emotional,
+                and spiritual—so that each girl may bloom into a woman of
+                wisdom, dignity, and lasting impact.
               </p>
               <div class="program-features">
                 <div class="feature-item">
@@ -179,7 +199,11 @@ const navigateToProgram = (program) => {
           <!-- Transition Management -->
           <div class="program-card">
             <div class="program-image">
-              <img src="/transition.jpg" alt="Transition Management" class="img-fluid">
+              <img
+                src="/transition.jpg"
+                alt="Transition Management"
+                class="img-fluid"
+              />
               <div class="program-badge transition-badge">
                 <i class="fas fa-exchange-alt"></i>
                 Transition Management
@@ -187,12 +211,15 @@ const navigateToProgram = (program) => {
             </div>
             <div class="program-content">
               <h3 class="program-title">Transition Management</h3>
-              <p class="program-tagline">Navigating life changes with clarity and purpose</p>
+              <p class="program-tagline">
+                Navigating life changes with clarity and purpose
+              </p>
               <p class="program-description">
-                Helping young people navigate key life changes smoothly with clarity of direction 
-                and a sense of purpose during critical transition periods. Our comprehensive 
-                approach supports youth through various life stages with practical tools and 
-                emotional support.
+                Helping young people navigate key life changes smoothly with
+                clarity of direction and a sense of purpose during critical
+                transition periods. Our comprehensive approach supports youth
+                through various life stages with practical tools and emotional
+                support.
               </p>
               <div class="program-features">
                 <div class="feature-item">
@@ -222,7 +249,11 @@ const navigateToProgram = (program) => {
           <!-- Mentorship & Coaching -->
           <div class="program-card">
             <div class="program-image">
-              <img src="/mentorship1.jpg" alt="Mentorship & Coaching" class="img-fluid">
+              <img
+                src="/mentorship1.jpg"
+                alt="Mentorship & Coaching"
+                class="img-fluid"
+              />
               <div class="program-badge mentorship-badge">
                 <i class="fas fa-hands-helping"></i>
                 Mentorship & Coaching
@@ -230,11 +261,14 @@ const navigateToProgram = (program) => {
             </div>
             <div class="program-content">
               <h3 class="program-title">Mentorship & Coaching</h3>
-              <p class="program-tagline">Personalized guidance for growth and success</p>
+              <p class="program-tagline">
+                Personalized guidance for growth and success
+              </p>
               <p class="program-description">
-                Skill building, guidance, and motivation to help young individuals attain 
-                personal and professional growth through experienced mentors in various fields. 
-                Our mentorship program connects youth with industry professionals for real-world 
+                Skill building, guidance, and motivation to help young
+                individuals attain personal and professional growth through
+                experienced mentors in various fields. Our mentorship program
+                connects youth with industry professionals for real-world
                 insights and career development.
               </p>
               <div class="program-features">
@@ -270,9 +304,10 @@ const navigateToProgram = (program) => {
               <h2 class="section-main-title">Our Approach</h2>
               <div class="accent-line mx-auto mb-4"></div>
               <p class="approach-text">
-                We believe in practical, hands-on leadership development that combines:
+                We believe in practical, hands-on leadership development that
+                combines:
               </p>
-              
+
               <div class="approach-features">
                 <div class="approach-item">
                   <i class="fas fa-user-friends approach-icon"></i>
@@ -306,7 +341,9 @@ const navigateToProgram = (program) => {
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-main-title">Program Formats</h2>
-          <p class="section-subtitle">Flexible scheduling to accommodate different needs</p>
+          <p class="section-subtitle">
+            Flexible scheduling to accommodate different needs
+          </p>
           <div class="accent-line mx-auto"></div>
         </div>
 
@@ -320,8 +357,8 @@ const navigateToProgram = (program) => {
               <h3 class="format-title">Daily Format</h3>
               <p class="format-duration">3-7 Days Intensive</p>
               <p class="format-description">
-                Meeting daily at a chosen location with participants for immersive, 
-                focused leadership development sessions.
+                Meeting daily at a chosen location with participants for
+                immersive, focused leadership development sessions.
               </p>
             </div>
           </div>
@@ -335,7 +372,7 @@ const navigateToProgram = (program) => {
               <h3 class="format-title">Camp Format</h3>
               <p class="format-duration">3-5 Days Intensive</p>
               <p class="format-description">
-                Residential camp experience with intensive leadership training, 
+                Residential camp experience with intensive leadership training,
                 team building, and personal development activities.
               </p>
             </div>
@@ -350,15 +387,14 @@ const navigateToProgram = (program) => {
               <h3 class="format-title">Weekly Format</h3>
               <p class="format-duration">5-10 Weeks Program</p>
               <p class="format-description">
-                Weekly sessions over several months, culminating with a camp experience 
-                and celebration ceremony with prizes.
+                Weekly sessions over several months, culminating with a camp experience or retreat.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
+
     <Footer />
   </div>
 </template>
@@ -488,7 +524,11 @@ const navigateToProgram = (program) => {
 .accent-line {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, rgb(20, 101, 167) 0%, rgb(12, 65, 107) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(20, 101, 167) 0%,
+    rgb(12, 65, 107) 100%
+  );
   border-radius: 2px;
   margin-bottom: 2rem;
 }
@@ -759,67 +799,67 @@ const navigateToProgram = (program) => {
   .program-hero-title {
     font-size: 2.5rem;
   }
-  
+
   .program-hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .desktop-bg {
     display: none;
   }
-  
+
   .mobile-bg {
     display: block;
   }
-  
+
   .program-nav-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .program-nav-btn {
     width: 200px;
     justify-content: center;
   }
-  
+
   .program-card {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  
+
   .program-card:nth-child(even) .program-image,
   .program-card:nth-child(even) .program-content {
     order: unset;
   }
-  
+
   .program-image {
     height: 250px;
   }
-  
+
   .program-content {
     padding: 2rem;
   }
-  
+
   .program-features {
     grid-template-columns: 1fr;
   }
-  
+
   .approach-features {
     grid-template-columns: 1fr;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .section-main-title {
     font-size: 2.2rem;
   }
-  
+
   .section-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .format-card {
     padding: 1.5rem;
   }
@@ -829,15 +869,15 @@ const navigateToProgram = (program) => {
   .program-hero-title {
     font-size: 2rem;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .section-main-title {
     font-size: 2rem;
   }
-  
+
   .program-content {
     padding: 1.5rem;
   }

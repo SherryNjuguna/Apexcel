@@ -207,7 +207,7 @@ export default {
         {
           name: "Samuel Simiyu",
           role: "Partnerships and Business Development Director",
-          photo: "/sam11 (1).jpg"
+          photo: "/samvictor1.jpg"
         },
         {
           name: "Hillary Soh",
