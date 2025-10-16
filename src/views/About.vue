@@ -140,11 +140,7 @@ const mobileImage = ref('/heroA1.jpg')
                 <i class="fas fa-star"></i>
               </div>
               <h3 class="card-title">Core Values</h3>
-              <div class="values-list">
-                <div class="value-item">
-                  <i class="fas fa-shield-alt value-icon"></i>
-                  <div><strong>Integrity:</strong> Building trust through accountability</div>
-                </div>
+              <div class="values-list">               
                 <div class="value-item">
                   <i class="fas fa-trophy value-icon"></i>
                   <div><strong>Excellence:</strong> Delivering beyond expectations</div>
@@ -160,6 +156,10 @@ const mobileImage = ref('/heroA1.jpg')
                 <div class="value-item">
                   <i class="fas fa-user-tie value-icon"></i>
                   <div><strong>Professionalism:</strong> Maintaining high standards</div>
+                </div>
+                <div class="value-item">
+                  <i class="fas fa-shield-alt value-icon"></i>
+                  <div><strong>Integrity:</strong> Building trust through accountability</div>
                 </div>
               </div>
             </div>
