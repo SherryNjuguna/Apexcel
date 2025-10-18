@@ -278,7 +278,7 @@ const navigateToProgram = (program) => {
                 </div>
                 <div class="feature-item">
                   <i class="fas fa-briefcase"></i>
-                  <span>Career Coaching</span>
+                  <span>Career Development</span>
                 </div>
                 <div class="feature-item">
                   <i class="fas fa-comments"></i>

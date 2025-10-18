@@ -93,7 +93,7 @@ const toggleFaq = (index) => {
                     </div>
                     <div class="contact-text">
                       <h4>Call Us</h4>
-                      <p>+254 94 967 580</p>
+                      <p>+254 794 967 580</p>
                       <small>Mon-Fri, 8:00 AM - 5:00 PM</small>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const toggleFaq = (index) => {
                     <i class="fab fa-facebook-f"></i>
                   </a>
                   <a href="#" class="social-link">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-x-twitter"></i>
                   </a>
                   <a href="#" class="social-link">
                     <i class="fab fa-instagram"></i>

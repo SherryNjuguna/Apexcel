@@ -68,14 +68,17 @@ const isActive = (path) => computed(() => route.path.startsWith(path));
     </div>
     <ul class="footer-list">
         <li>
-            <i class="fas fa-envelope" style="color: white;"></i> apexcelventures@gmail.com
+            <i class="fas fa-envelope" style="color: white;"></i> apexcelventures@gmail.com 
         </li>
+        <li>       
+        <i class="fas fa-envelope" style="color: white;"></i>info@apexcelventures.com
+     </li>
         <li>
-            <i class="fas fa-phone" style="color: white;"></i> +254 94 967 580
+            <i class="fas fa-phone" style="color: white;"></i> +254 794 967 580
         </li>
         <li class="">
             <i class="fab fa-facebook " style="color: white;"></i>
-            <i class="fab fa-twitter ms-2" style="color: white;"></i>
+            <i class="fab fa-x-twitter ms-2" style="color: white;"></i>
             <i class="fab fa-linkedin ms-2" style="color: white;"></i>
             <i class="fab fa-instagram ms-2" style="color: white;"></i>
 
