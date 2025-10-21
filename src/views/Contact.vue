@@ -17,7 +17,7 @@ const faqs = ref([
   },
   {
     question: "What age groups do you work with?",
-    answer: "We primarily work with young people aged 10-30 years, but our programs are tailored to different age brackets within this range to ensure age-appropriate content and delivery.",
+    answer: "We primarily work with young people aged 13-30 years, but our programs are tailored to different age brackets within this range to ensure age-appropriate content and delivery.",
     open: false
   },
   {
@@ -107,8 +107,9 @@ const toggleFaq = (index) => {
                     </div>
                     <div class="contact-text">
                       <h4>Email Us</h4>
-                      <p>apexcelventures@gmail.com</p>
-                      <p>info@apexcelventures.com</p>
+                      <a href=" mailto:apexcelventures@gmail.com">apexcelventures@gmail.com</a> <br>
+                      <a href=" mailto:info@apexcelventures.com">info@apexcelventures.com</a><br>
+                    
                       <small>We respond within 24 hours</small>
                     </div>
                   </div>
