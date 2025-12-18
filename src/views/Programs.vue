@@ -155,7 +155,7 @@ const navigateToProgram = (program) => {
           <!-- Ayana Program -->
           <div class="program-card">
             <div class="program-image">
-              <img src="/girls.jpg" alt="Ayana Program" class="img-fluid" />
+              <img src="/ayana.jpg" alt="Ayana Program" class="img-fluid" />
               <div class="program-badge ayana-badge">
                 <i class="fas fa-female"></i>
                 Ayana Program
