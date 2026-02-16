@@ -8,7 +8,7 @@ const router = useRouter()
 const desktopImage = ref('/heroA.jpg')
 const mobileImage = ref('/heroA1.jpg')
 
-// Scroll to programs section smoothly
+// Scroll to programs
 const scrollToPrograms = () => {
   const programsSection = document.getElementById('programs-section')
   if (programsSection) {
@@ -146,7 +146,7 @@ const navigateToAbout = () => {
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-title">Our Programs</h2>
-          <p class="section-subtitle">Transforming young lives through comprehensive development programs</p>
+          <p class="section-subtitle">Transforming lives through comprehensive development programs</p>
           <div class="accent-line mx-auto"></div>
         </div>
 
