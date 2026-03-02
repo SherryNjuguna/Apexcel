@@ -179,7 +179,7 @@ const mobileImage = ref('/heroA1.jpg')
 
         <div class="row g-4 justify-content-center">
           <!-- Team Members -->
-          <div class="col-lg-4 col-md-6" v-for="member in teamMembers" :key="member.name">
+          <div class="col-lg-3 col-md-6" v-for="member in teamMembers" :key="member.name">
             <div class="team-card">
               <div class="team-photo">
                 <img :src="member.photo" :alt="member.name" class="member-image">
@@ -206,7 +206,7 @@ export default {
       teamMembers: [
         {
           name: "Samuel Simiyu",
-          role: "Partnerships and Business Development Director",
+          role: "Team Lead and Partnerships Director",
           photo: "/samvictor (1).jpeg"
         },
         {
@@ -214,11 +214,7 @@ export default {
           role: "Programs lead and MERL officer",
           photo: "/Hillary.jpg"
         },
-        {
-          name: "Grace Njuguna",
-          role: "Operations, Tech and Curriculums Lead",
-          photo: "/file.jpg"
-        },
+        
         {
           name: "Rebecca Mwema",
           role: "Team Admin, legal and Child protection officer",
