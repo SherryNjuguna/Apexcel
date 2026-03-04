@@ -3,10 +3,12 @@
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import { ref } from 'vue'
+import Partners from "../components/Partners.vue";
 
 // Hero section images
 const desktopImage = ref('/heroA11.jpg')
 const mobileImage = ref('/heroA1.jpg')
+
 </script>
 
 <template>
@@ -193,7 +195,8 @@ const mobileImage = ref('/heroA1.jpg')
         </div>
       </div>
     </section>
-    
+
+   <Partners />
     <Footer />
   </div>
 </template>
@@ -573,4 +576,6 @@ export default {
     font-size: 1rem;
   }
 }
+
+
 </style>

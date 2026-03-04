@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import Partners from "../components/Partners.vue";
 
 const router = useRouter()
 const desktopImage = ref('/heroA.jpg')
@@ -237,6 +238,7 @@ const navigateToAbout = () => {
       </div>
     </section>
     
+    <Partners />
     <Footer />
   </div>
 </template>
