@@ -200,7 +200,7 @@ const navigateToProgram = (program) => {
           <div class="program-card">
             <div class="program-image">
               <img
-                src="/transition.jpg"
+                src="/Transition2.jpeg"
                 alt="Transition Management"
                 class="img-fluid"
               />

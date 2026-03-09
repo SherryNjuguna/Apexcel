@@ -26,7 +26,7 @@ const route = useRoute();
     <div class="container">
       <!-- Section Header -->
       <div class="section-header text-center mb-5">
-        <h2 class="section-main-title">Our Partners</h2>
+        <h2 class="section-main-title">Our Partners/Clients</h2>
         <p class="section-subtitle">Organizations that we have worked with, who share our vision for youth transformation</p>
         <div class="accent-line mx-auto"></div>
       </div>
