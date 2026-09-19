@@ -7,6 +7,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const desktopImage = ref("/heroA11.jpg");
 const mobileImage = ref("/heroA1.jpg");
+const generalSoftSkillsImage = ref("/Transition2.jpeg"); 
 
 // Navigate to specific program page
 const navigateToProgram = (program) => {
@@ -26,14 +27,14 @@ const navigateToProgram = (program) => {
       <div class="hero-background desktop-bg">
         <img
           :src="desktopImage"
-          alt="Leadership Development Program"
+          alt="Soft Skills Development Program"
           class="background-image"
         />
       </div>
       <div class="hero-background mobile-bg">
         <img
           :src="mobileImage"
-          alt="Leadership Development Program"
+          alt="Soft Skills Development Program"
           class="background-image"
         />
       </div>
@@ -42,9 +43,9 @@ const navigateToProgram = (program) => {
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10 col-12 text-center">
-            <h1 class="program-hero-title">Leadership Development</h1>
+            <h1 class="program-hero-title">Soft Skills Development</h1>
             <p class="program-hero-subtitle">
-              Empowering Transformational Leaders for Impact Beyond Themselves
+              Building the core human skills for work, relationships, and everyday life
             </p>
           </div>
         </div>
@@ -59,8 +60,8 @@ const navigateToProgram = (program) => {
             @click="navigateToProgram('programs')"
             class="program-nav-btn active"
           >
-            <i class="fas fa-crown program-nav-icon"></i>
-            Leadership
+            <i class="fas fa-brain program-nav-icon"></i>
+            Soft Skills
           </button>
           <button @click="navigateToProgram('tech')" class="program-nav-btn">
             <i class="fas fa-laptop-code program-nav-icon"></i>
@@ -80,17 +81,32 @@ const navigateToProgram = (program) => {
     <!-- Program Overview -->
     <section class="program-overview">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-center">
-            <h2 class="section-title">Transformational Leader Program</h2>
-            <div class="accent-line mx-auto"></div>
-            <p class="overview-text">
-              A comprehensive program designed to empower young individuals with
-              the skills, knowledge, and support necessary to excel in life and
-              create impact beyond themselves. Our mentorship, transition
-              management, and gender-specific programs are set on a path of
-              shaping the next generation of confident, capable, and visionary
-              leaders.
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="overview-image-wrapper">
+              <img
+                :src="generalSoftSkillsImage"
+                alt="Soft Skills Program"
+                class="img-fluid overview-img"
+              />
+              <div class="overview-image-badge">
+                <i class="fas fa-check-circle me-2"></i> Real Skills for Real Life
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="section-title text-start">The Soft Skills Program</h2>
+            <div class="accent-line"></div>
+            <p class="overview-text text-start">
+              Hard skills might land you an interview, but soft skills build your career. 
+              The Soft Skills Program at Apexcel Ventures gives young adults and professionals 
+              the practical habits, confidence, and communication tools needed to stand out 
+              and succeed in real-world environments.
+            </p>
+            <p class="overview-text text-start mt-3">
+              Through interactive sessions, practical exercises, and honest feedback, we help you 
+              speak clearly, stay composed under pressure, and build strong relationships wherever you go.
             </p>
           </div>
         </div>
@@ -101,192 +117,161 @@ const navigateToProgram = (program) => {
     <section class="program-components">
       <div class="container">
         <div class="section-header text-center mb-5">
-          <h2 class="section-main-title">Our Leadership Programs</h2>
+          <h2 class="section-main-title">Our Focus Areas</h2>
           <p class="section-subtitle">
-            Specialized tracks designed for comprehensive personal development
+            Practical learning tracks tailored for growth at every step
           </p>
           <div class="accent-line mx-auto"></div>
         </div>
 
-        <div class="programs-grid">
-          <!-- Shujaa Program -->
-          <div class="program-card">
-            <div class="program-image">
-              <img src="/sam by.jpg" alt="Shujaa Program" class="img-fluid" />
-              <div class="program-badge shujaa-badge">
-                <i class="fas fa-male"></i>
-                Shujaa Program
+        <div class="tracks-grid">
+          <!-- Track 1: Communication -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon-wrapper comm-bg">
+                <i class="fas fa-comments"></i>
               </div>
+              <span class="track-badge comm-badge">Communication</span>
             </div>
-            <div class="program-content">
-              <h3 class="program-title">Shujaa Program</h3>
-              <p class="program-tagline">
-                Raising a generation of men with a clear understanding of true
-                manhood
+            <div class="track-content">
+              <h3 class="track-title">Effective Communication & Personal Branding</h3>
+              <p class="track-tagline">
+                Speak clearly, present with confidence, and make a strong impression
               </p>
-              <p class="program-description">
-                The program aims to see young boys grown into good, young men,
-                respectable husbands, responsible fathers, and honourable
-                elders. The program formats allows them to understand manhood,
-                explore identity, navigate personal and societal challenge with
-                strength and build a purpose-driven life.
+              <p class="track-description">
+                Learn how to express your ideas simply and persuasively. We cover how to speak comfortably 
+                in front of others, write professional emails, listen actively, and build a positive personal brand.
               </p>
-              <div class="program-features">
+              <div class="track-features">
                 <div class="feature-item">
-                  <i class="fas fa-user-check"></i>
-                  <span>Purposeful Living</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Public Speaking & Speaking Confidence</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-shield-alt"></i>
-                  <span>Values-Based Leadership</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Business Writing & Everyday Email Etiquette</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-users"></i>
-                  <span>Identity Exploration</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Active Listening & Clear Dialogue</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-compass"></i>
-                  <span>Purpose-Driven Life</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Building Your Personal Brand</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Ayana Program -->
-          <div class="program-card">
-            <div class="program-image">
-              <img src="/ayana.jpg" alt="Ayana Program" class="img-fluid" />
-              <div class="program-badge ayana-badge">
-                <i class="fas fa-female"></i>
-                Ayana Program
+          <!-- Track 2: Emotional Intelligence -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon-wrapper eq-bg">
+                <i class="fas fa-heart"></i>
               </div>
+              <span class="track-badge eq-badge">Self-Awareness & Relationships</span>
             </div>
-            <div class="program-content">
-              <h3 class="program-title">Ayana Program</h3>
-              <p class="program-tagline">
-                Nurture a generation of young women who embrace authentic
-                womanhood, walk in godly confidence, and lead lives of purpose              </p>
-              <p class="program-description">
-                
-                The program gently guides them through the sacred and powerful
-                process of embracing womanhood as a gift, while boldly
-                challenging them to step into their roles with confidence and
-                purpose. This journey nurtures growth—intellectual, emotional,
-                and spiritual—so that each girl may bloom into a woman of
-                wisdom, dignity, and lasting impact.
+            <div class="track-content">
+              <h3 class="track-title">Emotional Intelligence & People Skills</h3>
+              <p class="track-tagline">
+                Understand how you work and connect genuinely with others
               </p>
-              <div class="program-features">
+              <p class="track-description">
+                Good relationships start with self-awareness. Learn to stay calm under stress, 
+                understand different perspectives, handle difficult conversations smoothly, and work well in teams.
+              </p>
+              <div class="track-features">
                 <div class="feature-item">
-                  <i class="fas fa-heart"></i>
-                  <span>Authentic Femininity</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Managing Emotions Under Pressure</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-star"></i>
-                  <span>Personal Development</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Empathy & Healthy Relationships</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-hands-helping"></i>
-                  <span>Community Impact</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Conflict Resolution Without Drama</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-crown"></i>
-                  <span>Values-Driven Leadership</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Teamwork & Everyday Collaboration</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Transition Management -->
-          <div class="program-card">
-            <div class="program-image">
-              <img
-                src="/Transition2.jpeg"
-                alt="Transition Management"
-                class="img-fluid"
-              />
-              <div class="program-badge transition-badge">
-                <i class="fas fa-exchange-alt"></i>
-                Transition Management
+          <!-- Track 3: Critical Thinking -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon-wrapper think-bg">
+                <i class="fas fa-lightbulb"></i>
               </div>
+              <span class="track-badge think-badge">Problem Solving</span>
             </div>
-            <div class="program-content">
-              <h3 class="program-title">Transition Management</h3>
-              <p class="program-tagline">
-                Navigating life changes with clarity and purpose
+            <div class="track-content">
+              <h3 class="track-title">Critical Thinking & Decision Making</h3>
+              <p class="track-tagline">
+                Think on your feet and solve problems with clarity
               </p>
-              <p class="program-description">
-                Helping young people navigate key life changes smoothly with
-                clarity of direction and a sense of purpose during critical
-                transition periods. Our comprehensive approach supports youth
-                through various life stages with practical tools and emotional
-                support.
+              <p class="track-description">
+                Gain practical frameworks to analyze challenges objectively, weigh your options, 
+                make sound decisions, and adjust quickly when things don't go according to plan.
               </p>
-              <div class="program-features">
+              <div class="track-features">
                 <div class="feature-item">
-                  <i class="fas fa-user-check"></i>
-                  <span>Leadership Development</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Practical Problem-Solving Steps</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-building"></i>
-                  <span>Career Development</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Creative Thinking for Daily Challenges</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-life-ring"></i>
-                  <span>Life & Social Skills</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Making Smart Decisions Under Pressure</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-coins"></i>
-                  <span>Financial Literacy</span>
-                </div>
-                <div class="feature-item">
-                  <i class="fas fa-pray"></i>
-                  <span>Spiritual Formation</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Adapting Easily to Change</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Mentorship & Coaching -->
-          <div class="program-card">
-            <div class="program-image">
-              <img
-                src="/mentorship1.jpg"
-                alt="Mentorship & Coaching"
-                class="img-fluid"
-              />
-              <div class="program-badge mentorship-badge">
-                <i class="fas fa-hands-helping"></i>
-                Mentorship & Coaching
+          <!-- Track 4: Career Readiness -->
+          <div class="track-card">
+            <div class="track-header">
+              <div class="track-icon-wrapper career-bg">
+                <i class="fas fa-briefcase"></i>
               </div>
+              <span class="track-badge career-badge">Career Readiness</span>
             </div>
-            <div class="program-content">
-              <h3 class="program-title">Mentorship & Coaching</h3>
-              <p class="program-tagline">
-                Personalized guidance for growth and success
+            <div class="track-content">
+              <h3 class="track-title">Workplace Readiness & Professional Skills</h3>
+              <p class="track-tagline">
+                Move from learning environments to the workplace with confidence
               </p>
-              <p class="program-description">
-                Skill building, guidance, and motivation to help young
-                individuals attain personal and professional growth through
-                experienced mentors in various fields. Our mentorship program
-                connects youth with industry professionals for real-world
-                insights and career development.
+              <p class="track-description">
+                Prepare for the modern working world with practical guidance on writing solid resumes, 
+                acing job interviews, managing your time, and navigating workplace culture.
               </p>
-              <div class="program-features">
+              <div class="track-features">
                 <div class="feature-item">
-                  <i class="fas fa-user-check"></i>
-                  <span>Personal Development</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Time Management & Focus Tools</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-briefcase"></i>
-                  <span>Career Development</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Resume Building & Interview Practice</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-comments"></i>
-                  <span>Leadership Training</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Workplace Culture & Etiquette</span>
                 </div>
                 <div class="feature-item">
-                  <i class="fas fa-handshake"></i>
-                  <span>Networking & Exposure</span>
+                  <i class="fas fa-check-circle"></i>
+                  <span>Work Ethic & Professional Integrity</span>
                 </div>
               </div>
             </div>
@@ -301,33 +286,32 @@ const navigateToProgram = (program) => {
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="approach-content text-center">
-              <h2 class="section-main-title">Our Approach</h2>
+              <h2 class="section-main-title">How We Teach</h2>
               <div class="accent-line mx-auto mb-4"></div>
               <p class="approach-text">
-                We believe in practical, hands-on leadership development that
-                combines:
+                Soft skills aren't learned by just sitting through lectures. You build them by practicing in a supportive space:
               </p>
 
               <div class="approach-features">
                 <div class="approach-item">
-                  <i class="fas fa-user-friends approach-icon"></i>
-                  <h4>One-on-One Coaching</h4>
-                  <p>Personalized guidance from experienced mentors</p>
+                  <i class="fas fa-chalkboard-user approach-icon"></i>
+                  <h4>Practical Workshops</h4>
+                  <p>Real-life simulations, discussions, and hands-on activities</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-users approach-icon"></i>
-                  <h4>Group Mentorship</h4>
-                  <p>Collaborative learning and peer support</p>
+                  <i class="fas fa-toolbox approach-icon"></i>
+                  <h4>Simple Toolkits</h4>
+                  <p>Easy-to-use habits and templates you can apply starting day one</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-project-diagram approach-icon"></i>
-                  <h4>Networking Opportunities</h4>
-                  <p>Connections with professionals across industries</p>
+                  <i class="fas fa-users-gear approach-icon"></i>
+                  <h4>Group Exercises</h4>
+                  <p>Collaborative tasks that build teamwork and listening skills</p>
                 </div>
                 <div class="approach-item">
-                  <i class="fas fa-hands approach-icon"></i>
-                  <h4>Practical Application</h4>
-                  <p>Real-world projects and community engagement</p>
+                  <i class="fas fa-comments-dollar approach-icon"></i>
+                  <h4>Honest Feedback</h4>
+                  <p>Direct, supportive guidance from facilitators to track your growth</p>
                 </div>
               </div>
             </div>
@@ -336,64 +320,6 @@ const navigateToProgram = (program) => {
       </div>
     </section>
 
-    <!-- Program Formats -->
-    <section class="program-formats">
-      <div class="container">
-        <div class="section-header text-center mb-5">
-          <h2 class="section-main-title">Program Formats</h2>
-          <p class="section-subtitle">
-            Flexible scheduling to accommodate different needs
-          </p>
-          <div class="accent-line mx-auto"></div>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <!-- Daily Format -->
-          <div class="col-lg-4 col-md-6">
-            <div class="format-card">
-              <div class="format-icon daily-format">
-                <i class="fas fa-calendar-day"></i>
-              </div>
-              <h3 class="format-title">Daily Format</h3>
-              <p class="format-duration">3-7 Days Intensive</p>
-              <p class="format-description">
-                Meeting daily at a chosen location with participants for
-                immersive, focused leadership development sessions.
-              </p>
-            </div>
-          </div>
-
-          <!-- Camp Format -->
-          <div class="col-lg-4 col-md-6">
-            <div class="format-card">
-              <div class="format-icon camp-format">
-                <i class="fas fa-campground"></i>
-              </div>
-              <h3 class="format-title">Camp Format</h3>
-              <p class="format-duration">3-5 Days Intensive</p>
-              <p class="format-description">
-                Residential camp experience with intensive leadership training,
-                team building, and personal development activities.
-              </p>
-            </div>
-          </div>
-
-          <!-- Weekly Format -->
-          <div class="col-lg-4 col-md-6">
-            <div class="format-card">
-              <div class="format-icon weekly-format">
-                <i class="fas fa-calendar-week"></i>
-              </div>
-              <h3 class="format-title">Weekly Format</h3>
-              <p class="format-duration">5-10 Weeks Program</p>
-              <p class="format-description">
-                Weekly sessions over several months, culminating with a camp experience or retreat.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <Footer />
   </div>
@@ -514,11 +440,38 @@ const navigateToProgram = (program) => {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
 
+.overview-image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.overview-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.overview-image-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(20, 101, 167, 0.9);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+}
+
 .section-title {
   color: rgb(20, 101, 167);
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .accent-line {
@@ -530,18 +483,17 @@ const navigateToProgram = (program) => {
     rgb(12, 65, 107) 100%
   );
   border-radius: 2px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .overview-text {
   color: #555;
   line-height: 1.7;
-  font-size: 1.1rem;
-  margin: 0 auto;
-  max-width: 800px;
+  font-size: 1.05rem;
+  margin: 0;
 }
 
-/* ===== PROGRAM COMPONENTS STYLES ===== */
+/* ===== TRACK CARDS (NO IMAGE) STYLES ===== */
 .program-components {
   padding: 5rem 0;
   background: white;
@@ -564,127 +516,133 @@ const navigateToProgram = (program) => {
   margin-bottom: 1.5rem;
 }
 
-.programs-grid {
+.tracks-grid {
   display: grid;
-  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.program-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  background: white;
+.track-card {
+  background: #ffffff;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.program-card:hover {
+.track-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(20, 101, 167, 0.12);
+  border-color: rgba(20, 101, 167, 0.2);
 }
 
-.program-card:nth-child(even) .program-image {
-  order: 2;
-}
-
-.program-card:nth-child(even) .program-content {
-  order: 1;
-}
-
-.program-image {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
-}
-
-.program-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.program-card:hover .program-image img {
-  transform: scale(1.05);
-}
-
-.program-badge {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-weight: 600;
+.track-header {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
-.shujaa-badge {
+.track-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.comm-bg {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.ayana-badge {
+.eq-bg {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-.transition-badge {
+.think-bg {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-.mentorship-badge {
+.career-bg {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
-.program-content {
-  padding: 2.5rem;
+.track-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
-.program-title {
+.comm-badge {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+.eq-badge {
+  background: rgba(245, 87, 108, 0.1);
+  color: #f5576c;
+}
+
+.think-badge {
+  background: rgba(79, 172, 254, 0.1);
+  color: #00c6ff;
+}
+
+.career-badge {
+  background: rgba(67, 233, 123, 0.15);
+  color: #21b363;
+}
+
+.track-title {
   color: rgb(20, 101, 167);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.program-tagline {
+.track-tagline {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
-.program-description {
+.track-description {
   color: #555;
-  line-height: 1.7;
-  margin-bottom: 2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
-.program-features {
+.track-features {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  border-top: 1px dashed #e9ecef;
+  padding-top: 1.25rem;
 }
 
 .feature-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: #555;
-  font-size: 0.9rem;
+  gap: 0.6rem;
+  color: #444;
+  font-size: 0.95rem;
 }
 
 .feature-item i {
   color: rgb(20, 101, 167);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 /* ===== PROGRAM APPROACH STYLES ===== */
@@ -795,6 +753,12 @@ const navigateToProgram = (program) => {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .program-hero-title {
     font-size: 2.5rem;
@@ -822,26 +786,8 @@ const navigateToProgram = (program) => {
     justify-content: center;
   }
 
-  .program-card {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .program-card:nth-child(even) .program-image,
-  .program-card:nth-child(even) .program-content {
-    order: unset;
-  }
-
-  .program-image {
-    height: 250px;
-  }
-
-  .program-content {
-    padding: 2rem;
-  }
-
-  .program-features {
-    grid-template-columns: 1fr;
+  .track-card {
+    padding: 1.5rem;
   }
 
   .approach-features {
@@ -876,10 +822,6 @@ const navigateToProgram = (program) => {
 
   .section-main-title {
     font-size: 2rem;
-  }
-
-  .program-content {
-    padding: 1.5rem;
   }
 }
 </style>

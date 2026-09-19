@@ -48,12 +48,12 @@ const navigateToProgram = (program) => {
     <section class="program-navigation">
       <div class="container">
         <div class="program-nav-container">
-          <button 
-            @click="navigateToProgram('programs')" 
-            class="program-nav-btn"
+          <button
+            @click="navigateToProgram('programs')"
+            class="program-nav-btn active"
           >
-            <i class="fas fa-crown program-nav-icon"></i>
-            Leadership
+            <i class="fas fa-brain program-nav-icon"></i>
+            Soft Skills
           </button>
           <button 
             @click="navigateToProgram('tech')" 

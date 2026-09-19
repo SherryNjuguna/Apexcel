@@ -1,44 +1,52 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 import Partners from "../components/Partners.vue";
 
-const router = useRouter()
-const desktopImage = ref('/heroA.jpg')
-const mobileImage = ref('/heroA1.jpg')
+const router = useRouter();
+const desktopImage = ref("/heroA.jpg");
+const mobileImage = ref("/heroA1.jpg");
 
 // Scroll to programs
 const scrollToPrograms = () => {
-  const programsSection = document.getElementById('programs-section')
+  const programsSection = document.getElementById("programs-section");
   if (programsSection) {
-    programsSection.scrollIntoView({ behavior: 'smooth' })
+    programsSection.scrollIntoView({ behavior: "smooth" });
   }
-}
+};
 
 // Navigate to about page
 const navigateToAbout = () => {
-  router.push('/about')
-}
+  router.push("/about");
+};
 </script>
 
 <template>
   <div>
     <Navbar />
-    
+
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-overlay"></div>
-      
+
       <!-- Background Images -->
       <div class="hero-background desktop-bg">
-        <img :src="desktopImage" alt="Apexcel Ventures - Developing Leaders" class="background-image">
+        <img
+          :src="desktopImage"
+          alt="Apexcel Ventures - Developing Leaders"
+          class="background-image"
+        />
       </div>
       <div class="hero-background mobile-bg">
-        <img :src="mobileImage" alt="Apexcel Ventures - Developing Leaders" class="background-image">
+        <img
+          :src="mobileImage"
+          alt="Apexcel Ventures - Developing Leaders"
+          class="background-image"
+        />
       </div>
-      
+
       <!-- Hero Content -->
       <div class="container">
         <div class="row justify-content-center">
@@ -50,12 +58,18 @@ const navigateToAbout = () => {
               <span class="headline-item">Successful Entrepreneurs.</span>
             </h1>
             <p class="tagline">Equipping leaders, transforming tomorrow.</p>
-            
+
             <div class="action-buttons">
-              <button @click="scrollToPrograms" class="btn btn-primary btn-program">
+              <button
+                @click="scrollToPrograms"
+                class="btn btn-primary btn-program"
+              >
                 Our Programs
               </button>
-              <button @click="navigateToAbout" class="btn btn-outline-light btn-learn-more">
+              <button
+                @click="navigateToAbout"
+                class="btn btn-outline-light btn-learn-more"
+              >
                 Learn More
               </button>
             </div>
@@ -73,33 +87,33 @@ const navigateToAbout = () => {
               <h2 class="section-title">Who We Are</h2>
               <div class="accent-line"></div>
             </div>
-            
+
             <p class="lead-text">
-              Apexcel Ventures is a <span class="highlight">leadership development venture</span> 
-              born from a deep conviction that <span class="highlight">young people hold the key</span> 
+              Apexcel Ventures is a
+              <span class="highlight">leadership development venture</span> born
+              from a deep conviction that
+              <span class="highlight">young people hold the key</span>
               to a safer, more prosperous, and purpose-driven society.
             </p>
 
             <div class="core-pillars">
               <div class="pillar">
-                <div class="pillar-icon">👑</div>
-                <span class="pillar-text">Leadership</span>
+                <span class="pillar-text">Soft Skills</span>
               </div>
               <div class="pillar">
-                <div class="pillar-icon">💻</div>
                 <span class="pillar-text">Technology</span>
               </div>
               <div class="pillar">
-                <div class="pillar-icon">🚀</div>
                 <span class="pillar-text">Entrepreneurship</span>
               </div>
             </div>
 
             <p class="description-text">
-              We equip young people with the <strong>right tools, mindset, and opportunities</strong> 
-              to confront unemployment, leadership gaps, and limited access to practical skills. 
-              Our approach blends leadership development, entrepreneurship training, and tech 
-              innovation in every program.
+              We equip young people with the
+              <strong>right tools, mindset, and opportunities</strong>
+              to confront unemployment, leadership gaps, and limited access to
+              practical skills. Our approach blends leadership development,
+              entrepreneurship training, and tech innovation in every program.
             </p>
 
             <div class="impact-stats">
@@ -129,11 +143,11 @@ const navigateToAbout = () => {
 
           <div class="col-md-6">
             <div class="image-container">
-              <img 
-                src="/apexce2.jpg" 
+              <img
+                src="/apexce2.jpg"
                 alt="Apexcel Ventures - Empowering Youth"
                 class="main-image"
-              >
+              />
               <div class="floating-element element-1"></div>
               <div class="floating-element element-2"></div>
             </div>
@@ -141,37 +155,47 @@ const navigateToAbout = () => {
         </div>
       </div>
     </section>
-    
+
     <!-- Programs Section -->
     <section id="programs-section" class="programs-section">
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="section-title">Our Programs</h2>
-          <p class="section-subtitle">Transforming lives through comprehensive development programs</p>
+          <p class="section-subtitle">
+            Transforming lives through comprehensive development programs
+          </p>
           <div class="accent-line mx-auto"></div>
         </div>
 
         <div class="row g-4">
-          <!-- Leadership Development Program -->
+          <!-- Soft Skills Development Program -->
           <div class="col-lg-4 col-md-6">
             <div class="program-card">
               <div class="card-image">
-                <img src="/sam by.jpg" alt="Leadership Development" class="img-fluid">
+                <img
+                  src="/Transition2.jpeg"
+                  alt="Soft Skills Development"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-content">
-                <h3 class="program-name">Leadership Development</h3>
+                <h3 class="program-name">Soft Skills Development</h3>
                 <p class="program-description">
-                  Empowering young individuals with skills, knowledge, and support to excel in life 
-                  and create impact beyond themselves through mentorship, transition management, 
-                  and gender-specific programs.
+                  Equipping young individuals and professionals with the
+                  essential communication, emotional intelligence, and
+                  problem-solving tools needed to succeed at work, build lasting
+                  relationships, and navigate everyday life.
                 </p>
                 <div class="program-features">
-                  <span class="feature-tag">Mentorship</span>
-                  <span class="feature-tag">Coaching</span>
-                  <span class="feature-tag">Personal Development</span>
+                  <span class="feature-tag">Communication</span>
+                  <span class="feature-tag">Emotional Intelligence</span>
+                  <span class="feature-tag">Career Readiness</span>
                 </div>
-                <button @click="$router.push('/programs')" class="btn-program-card">
-                  Explore Leadership Program
+                <button
+                  @click="$router.push('/programs')"
+                  class="btn-program-card"
+                >
+                  Explore Soft Skills
                 </button>
               </div>
             </div>
@@ -181,14 +205,15 @@ const navigateToAbout = () => {
           <div class="col-lg-4 col-md-6">
             <div class="program-card">
               <div class="card-image">
-                <img src="/tech.jpg" alt="Tech Training" class="img-fluid">
+                <img src="/tech.jpg" alt="Tech Training" class="img-fluid" />
               </div>
               <div class="card-content">
                 <h3 class="program-name">Tech Training</h3>
                 <p class="program-description">
-                  Equipping young people with essential digital and technical skills through 
-                  hands-on training in digital literacy, cybersecurity, and web development 
-                  to thrive in the digital economy.
+                  Equipping young people with essential digital and technical
+                  skills through hands-on training in digital literacy,
+                  cybersecurity, and web development to thrive in the digital
+                  economy.
                 </p>
                 <div class="program-features">
                   <span class="feature-tag">Digital Literacy</span>
@@ -206,21 +231,29 @@ const navigateToAbout = () => {
           <div class="col-lg-4 col-md-6">
             <div class="program-card">
               <div class="card-image">
-                <img src="/sam ml.jpg" alt="Entrepreneurship" class="img-fluid">
+                <img
+                  src="/sam ml.jpg"
+                  alt="Entrepreneurship"
+                  class="img-fluid"
+                />
               </div>
               <div class="card-content">
                 <h3 class="program-name">Entrepreneurship (Kuza)</h3>
                 <p class="program-description">
-                  Instilling an entrepreneurial mindset and equipping youth with business skills 
-                  for success. Developing creativity, resilience, and problem-solving abilities 
-                  to identify opportunities and create impact.
+                  Instilling an entrepreneurial mindset and equipping youth with
+                  business skills for success. Developing creativity,
+                  resilience, and problem-solving abilities to identify
+                  opportunities and create impact.
                 </p>
                 <div class="program-features">
                   <span class="feature-tag">Business Skills</span>
                   <span class="feature-tag">Financial Literacy</span>
                   <span class="feature-tag">Innovation</span>
                 </div>
-                <button @click="$router.push('/entrepreneurship')" class="btn-program-card">
+                <button
+                  @click="$router.push('/entrepreneurship')"
+                  class="btn-program-card"
+                >
                   Explore Kuza Program
                 </button>
               </div>
@@ -231,13 +264,16 @@ const navigateToAbout = () => {
         <!-- CTA Section -->
         <div class="text-center mt-5">
           <p class="cta-text">Ready to start your transformation journey?</p>
-          <button @click="$router.push('/programs')" class="btn btn-primary btn-lg">
+          <button
+            @click="$router.push('/programs')"
+            class="btn btn-primary btn-lg"
+          >
             View All Programs
           </button>
         </div>
       </div>
     </section>
-    
+
     <Partners />
     <Footer />
   </div>
@@ -412,7 +448,11 @@ const navigateToAbout = () => {
 .accent-line {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, rgb(20, 101, 167) 0%, rgb(12, 65, 107) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(20, 101, 167) 0%,
+    rgb(12, 65, 107) 100%
+  );
   border-radius: 2px;
   margin-bottom: 2rem;
 }
@@ -436,7 +476,11 @@ const navigateToAbout = () => {
 .floating-element {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgb(20, 101, 167) 0%, rgba(20, 101, 167, 0.3) 100%);
+  background: linear-gradient(
+    135deg,
+    rgb(20, 101, 167) 0%,
+    rgba(20, 101, 167, 0.3) 100%
+  );
   animation: float 3s ease-in-out infinite;
 }
 
@@ -457,8 +501,13 @@ const navigateToAbout = () => {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .lead-text {
@@ -470,7 +519,11 @@ const navigateToAbout = () => {
 }
 
 .highlight {
-  background: linear-gradient(120deg, rgba(20, 101, 167, 0.2) 0%, rgba(20, 101, 167, 0.1) 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(20, 101, 167, 0.2) 0%,
+    rgba(20, 101, 167, 0.1) 100%
+  );
   padding: 0.1rem 0.3rem;
   border-radius: 4px;
   font-weight: 600;
@@ -680,36 +733,36 @@ const navigateToAbout = () => {
     min-height: 70vh;
     padding: 2rem 0;
   }
-  
+
   .desktop-bg {
     display: none;
   }
-  
+
   .mobile-bg {
     display: block;
   }
-  
+
   .main-headline {
     font-size: 2.5rem;
   }
-  
+
   .headline-item {
     font-size: 2.2rem;
   }
-  
+
   .tagline {
     font-size: 1.2rem;
   }
-  
+
   .intro-statement {
     font-size: 1.1rem;
   }
-  
+
   .action-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn-primary,
   .btn-outline-light {
     width: 200px;
@@ -719,56 +772,56 @@ const navigateToAbout = () => {
   .section-title {
     font-size: 2rem;
   }
-  
+
   .lead-text {
     font-size: 1.1rem;
   }
-  
+
   .core-pillars {
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .impact-stats {
     gap: 1rem;
   }
-  
+
   .stat-number {
     font-size: 1.5rem;
   }
-  
+
   .cta-buttons {
     justify-content: center;
   }
-  
+
   .floating-element {
     display: none;
   }
-  
+
   .programs-section {
     padding: 3rem 0;
   }
-  
+
   .programs-section .section-title {
     font-size: 2.2rem;
   }
-  
+
   .section-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .card-image {
     height: 200px;
   }
-  
+
   .card-content {
     padding: 1.5rem;
   }
-  
+
   .program-name {
     font-size: 1.3rem;
   }
-  
+
   .program-description {
     font-size: 0.9rem;
   }
@@ -778,15 +831,15 @@ const navigateToAbout = () => {
   .hero-section {
     min-height: 60vh;
   }
-  
+
   .main-headline {
     font-size: 2rem;
   }
-  
+
   .headline-item {
     font-size: 1.8rem;
   }
-  
+
   .tagline {
     font-size: 1.1rem;
   }
@@ -794,11 +847,11 @@ const navigateToAbout = () => {
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .program-card {
     margin-bottom: 2rem;
   }
-  
+
   .program-features {
     justify-content: center;
   }
